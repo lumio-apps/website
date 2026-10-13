@@ -15,6 +15,8 @@
   --pt-tint: #e2ebff;
   --pw: #d63a78;
   --pw-tint: #ffe1ec;
+  --st: #c2441e;
+  --st-tint: #f7e4da;
 
   --step-0: 1rem;
   --step-1: 1.25rem;
@@ -38,6 +40,8 @@
     --pt-tint: #1b2752;
     --pw: #ff7fb0;
     --pw-tint: #3a1d33;
+    --st: #f08a63;
+    --st-tint: #3a231d;
   }
 }
 
@@ -65,7 +69,7 @@ p { margin: 0; }
 .site-header { border-bottom: 1px solid var(--line); background: var(--bg); position: sticky; top: 0; z-index: 10; }
 .site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; flex-wrap: wrap; }
 .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); font-weight: 700; font-size: 1.15rem; }
-.brand-mark { width: 26px; height: 26px; border-radius: 50%; background: conic-gradient(var(--calc) 0 33%, var(--pt) 0 66%, var(--pw) 0); }
+.brand-mark { width: 26px; height: 26px; border-radius: 50%; background: conic-gradient(var(--calc) 0 25%, var(--pt) 0 50%, var(--pw) 0 75%, var(--st) 0); }
 .site-nav { display: flex; gap: 4px; flex-wrap: wrap; }
 .site-nav a { padding: 6px 12px; border-radius: 999px; text-decoration: none; color: var(--muted); font-weight: 500; }
 .site-nav a:hover { color: var(--ink); background: var(--tint); }
@@ -118,6 +122,7 @@ p { margin: 0; }
 .app-row.calc { --row-tint: var(--calc-tint); --row-color: var(--calc); }
 .app-row.pt { --row-tint: var(--pt-tint); --row-color: var(--pt); }
 .app-row.pw { --row-tint: var(--pw-tint); --row-color: var(--pw); }
+.app-row.st { --row-tint: var(--st-tint); --row-color: var(--st); }
 @media (prefers-color-scheme: dark) { .app-row { --row-on: #13112a; } }
 
 /* Promises */
@@ -136,6 +141,8 @@ p { margin: 0; }
 body.calc { --accent: var(--calc); --tint: var(--calc-tint); }
 body.pt { --accent: var(--pt); --tint: var(--pt-tint); }
 body.pw { --accent: var(--pw); --tint: var(--pw-tint); }
+body.st { --accent: var(--st); --tint: var(--st-tint); }
+.note { margin-top: 18px; padding: 16px 20px; border-radius: 16px; background: var(--tint); }
 
 /* Screenshots */
 .shots-band { background: var(--tint); padding: 40px 0; }
