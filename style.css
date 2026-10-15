@@ -221,3 +221,39 @@ tr:last-child td { border-bottom: 0; }
   :root { --glass: var(--glass-solid); }
 }
 @media (prefers-reduced-motion: reduce) { a.tile { transition: none; } .switch, .switch::after { transition: none; } }
+
+/* Lumi, the floating robot in the home hero */
+.home-hero { position: relative; }
+.lumi { position: absolute; right: clamp(16px, 6%, 72px); top: 50%; width: 170px; height: 250px; margin-top: -125px; z-index: 1; pointer-events: none; }
+.lumi-bot { position: absolute; left: 20px; top: 8px; width: 130px; animation: lumi-float 3.2s ease-in-out infinite alternate; }
+.lumi-bot svg { display: block; width: 100%; height: auto; overflow: visible; }
+.lumi-shadow { position: absolute; left: 25px; bottom: 6px; width: 120px; height: 14px; border-radius: 50%; background: rgba(0,0,0,.28); animation: lumi-shadow 3.2s ease-in-out infinite alternate; }
+.lumi-flame { transform-origin: 60px 150px; animation: lumi-flame .18s ease-in-out infinite alternate; }
+.lumi-legL { transform-origin: 50px 122px; animation: lumi-dangle 3.2s ease-in-out infinite alternate; }
+.lumi-legR { transform-origin: 70px 122px; animation: lumi-dangle 3.2s ease-in-out -1.6s infinite alternate; }
+.lumi-armL { transform-origin: 36px 90px; animation: lumi-arm 3.2s ease-in-out infinite alternate; }
+.lumi-armR { transform-origin: 84px 90px; animation: lumi-arm 3.2s ease-in-out infinite alternate-reverse; }
+.lumi-ant { transform-origin: 60px 9px; animation: lumi-ping 2s ease-in-out infinite; }
+.lumi-eye.l { transform-origin: 51px 51px; animation: lumi-blink 4.6s infinite; }
+.lumi-eye.r { transform-origin: 69px 51px; animation: lumi-blink 4.6s infinite; }
+.lumi-eyes { transition: transform .12s ease-out; }
+.lumi-idle { animation: lumi-look 7s ease-in-out infinite; }
+@keyframes lumi-float { from { transform: translateY(0); } to { transform: translateY(-16px); } }
+@keyframes lumi-shadow { from { transform: scale(1); opacity: .5; } to { transform: scale(.7); opacity: .28; } }
+@keyframes lumi-flame { from { transform: scaleY(1); opacity: .95; } to { transform: scaleY(.55); opacity: .7; } }
+@keyframes lumi-dangle { from { transform: rotate(-6deg); } to { transform: rotate(6deg); } }
+@keyframes lumi-arm { from { transform: rotate(10deg); } to { transform: rotate(-4deg); } }
+@keyframes lumi-ping { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.35); } }
+@keyframes lumi-blink { 0%, 93%, 100% { transform: scaleY(1); } 96% { transform: scaleY(.1); } }
+@keyframes lumi-look { 0%, 100% { transform: translate(0, 0); } 30% { transform: translate(-4px, 1px); } 65% { transform: translate(4px, -1px); } }
+@media (max-width: 900px) {
+  .lumi { position: relative; right: auto; top: auto; margin: 0 auto; }
+  .home-hero { align-items: stretch; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .lumi-bot, .lumi-shadow, .lumi-flame, .lumi-legL, .lumi-legR, .lumi-armL, .lumi-armR, .lumi-ant, .lumi-eye, .lumi-idle { animation: none !important; }
+}
+@media (min-width: 901px) {
+  .home-hero > div:not(.lumi) { max-width: 62%; }
+  .home-hero h1 { font-size: clamp(46px, 6.4vw, 72px); }
+}

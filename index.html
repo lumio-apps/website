@@ -42,6 +42,7 @@
         <p class="lead">Small, useful Android apps that run entirely on your phone. No ads, no tracking, nothing sent to a server.</p>
         <div class="btns"><a class="btn light" href="#apps">See the apps</a><a class="btn ghost" href="https://github.com/lumio-apps">Source on GitHub</a></div>
       </div>
+      <div class="lumi" id="lumi" aria-hidden="true"></div>
     </section>
     <aside class="tile f1 t-dark airplane" aria-label="Airplane mode demo">
       <label class="airplane-row" for="plane"><span>Airplane mode</span><input class="switch" type="checkbox" id="plane" checked></label>
@@ -107,6 +108,7 @@
       <p>All code is public on GitHub. Anyone can read it, build it or suggest a change.</p>
     </div>
   </div>
+  <script src="lumi.js" defer></script>
   <script>
     (function () {
       var s = document.getElementById("plane"), n = document.getElementById("plane-note");
