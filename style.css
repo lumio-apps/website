@@ -214,3 +214,26 @@ thead th { background: var(--tint); width: auto; }
   .roadmap span:last-child { grid-column: 1 / -1; }
   .shots figure { flex-basis: 180px; }
 }
+
+/* Prose pages (privacy, terms, about, FAQ) */
+.prose { max-width: 760px; margin: 0 auto; padding: 56px 0 24px; }
+.prose h1 { font-size: var(--step-3); margin-bottom: 12px; }
+.prose h2 { font-size: var(--step-2); margin: 36px 0 10px; }
+.prose p, .prose li { color: var(--ink); }
+.prose ul { padding-left: 1.2em; }
+.prose li + li { margin-top: 6px; }
+.prose .lead { color: var(--muted); margin-bottom: 8px; }
+.prose .meta { color: var(--muted); font-size: .95em; margin: 8px 0 20px; }
+.prose .crumb { margin: 0 0 18px; }
+.prose .callout { background: var(--tint); border-radius: 18px; padding: 18px 22px; margin: 18px 0; }
+.prose .table-wrap { margin: 14px 0; }
+.prose .btn { display: inline-block; }
+.app-links { list-style: none; padding: 0 !important; display: grid; gap: 10px; }
+.app-links li { display: flex; gap: 14px; align-items: center; background: var(--surface); border-radius: 18px; padding: 14px 18px; margin: 0 !important; }
+.app-links img { border-radius: 11px; flex: none; }
+.app-links span { display: block; color: var(--muted); font-size: .95em; }
+.prose details { background: var(--surface); border-radius: 16px; padding: 4px 20px; margin-bottom: 10px; }
+.prose summary { cursor: pointer; font-weight: 600; padding: 14px 0; }
+.prose details p { margin: 0 0 14px; color: var(--muted); }
+.site-footer .legal { width: 100%; padding-top: 4px; }
+.site-footer .legal a { font-size: .95em; }
