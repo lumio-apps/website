@@ -3,10 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
   <title>Lumio Apps: simple, private, offline apps</title>
-  <meta name="description" content="Lumio Apps makes small apps that work fully offline: Calculator, PocketTally, Paperwise and Stamply. No ads, no tracking, no accounts. Free and open source.">
+  <meta name="description" content="Lumio Apps makes small Android apps that work fully offline: Calculator, PocketTally, Paperwise and Stamply. No ads, no tracking, no accounts. Free and open source.">
   <meta property="og:title" content="Lumio Apps: simple, private, offline apps">
-  <meta property="og:description" content="Lumio Apps makes small apps that work fully offline: Calculator, PocketTally, Paperwise and Stamply. No ads, no tracking, no accounts. Free and open source.">
+  <meta property="og:description" content="Lumio Apps makes small Android apps that work fully offline: Calculator, PocketTally, Paperwise and Stamply. No ads, no tracking, no accounts. Free and open source.">
   <meta property="og:image" content="https://lumio-apps.online/img/paperwise-icon.png">
   <link rel="icon" href="img/paperwise-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,100 +16,96 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="home">
+<a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span>Lumio Apps</a>
-    <nav class="site-nav" aria-label="Main">
-        <a href="calculator.html">Calculator</a>
-        <a href="pockettally.html">PocketTally</a>
-        <a href="paperwise.html">Paperwise</a>
-        <a href="stamply.html">Stamply</a>
-        <a href="https://github.com/lumio-apps">GitHub</a>
-    </nav>
+    <div class="bar">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span>Lumio Apps</a>
+      <nav class="site-nav" aria-label="Main">
+      <a href="calculator.html">Calculator</a>
+      <a href="pockettally.html">PocketTally</a>
+      <a href="paperwise.html">Paperwise</a>
+      <a href="stamply.html">Stamply</a>
+        <a class="gh" href="https://github.com/lumio-apps">GitHub</a>
+      </nav>
+    </div>
   </div>
 </header>
 
-<main>
-  <div class="wrap">
-    <section class="hero">
+<main id="main">
+<div class="wrap">
+  <div class="bento">
+    <section class="tile f2 t-hero home-hero">
+      <div class="pill">Free &middot; Open source &middot; No account</div>
       <div>
         <h1>Apps that work in airplane mode.</h1>
-        <p class="lead">Lumio Apps makes small, useful tools that run entirely on your device. No ads, no tracking, no accounts. Free and open source.</p>
-      </div>
-      <div class="airplane">
-        <label class="airplane-row" for="plane">
-          <strong>Airplane mode</strong>
-          <input class="switch" type="checkbox" id="plane" checked>
-        </label>
-        <ul class="airplane-apps">
-          <li><img src="img/calculator-icon.png" alt="" width="36" height="36">Calculator<span class="ok">Works</span></li>
-          <li><img src="img/pockettally-icon.png" alt="" width="36" height="36">PocketTally<span class="ok">Works</span></li>
-          <li><img src="img/paperwise-icon.png" alt="" width="36" height="36">Paperwise<span class="ok">Works</span></li>
-          <li><img src="img/stamply-icon.png" alt="" width="36" height="36">Stamply<span class="ok">Works</span></li>
-        </ul>
-        <p class="airplane-note" id="plane-note" aria-live="polite">Your data never leaves your phone.</p>
+        <p class="lead">Small, useful Android apps that run entirely on your phone. No ads, no tracking, nothing sent to a server.</p>
+        <div class="btns"><a class="btn light" href="#apps">See the apps</a><a class="btn ghost" href="https://github.com/lumio-apps">Source on GitHub</a></div>
       </div>
     </section>
-
-    <section class="apps" aria-label="Our apps">
-      <article class="app-row calc">
-        <img src="img/calculator-icon.png" alt="" width="96" height="96">
-        <div>
-          <h2><a href="calculator.html">Calculator</a></h2>
-          <p>Scientific mode, an 11-category unit converter, everyday money tools and a date calculator in one small app.</p>
-          <ul class="facts"><li>Android</li><li>Version 1.3.2</li><li>MIT license</li></ul>
-        </div>
-        <div class="btns"><a class="btn" href="calculator.html">See Calculator</a></div>
-      </article>
-
-      <article class="app-row pt">
-        <img src="img/pockettally-icon.png" alt="" width="96" height="96">
-        <div>
-          <h2><a href="pockettally.html">PocketTally</a></h2>
-          <p>Every coin, counted. Track income and expenses, set budgets, split bills and see clear reports, in 20 languages.</p>
-          <ul class="facts"><li>Android, Windows, Linux</li><li>Version 1.3.3</li><li>GPL-3.0 license</li></ul>
-        </div>
-        <div class="btns"><a class="btn" href="pockettally.html">See PocketTally</a></div>
-      </article>
-
-      <article class="app-row pw">
-        <img src="img/paperwise-icon.png" alt="" width="96" height="96">
-        <div>
-          <h2><a href="paperwise.html">Paperwise</a></h2>
-          <p>Read, merge, split, scan, compress and lock PDFs, and clean up photos, right on your phone. Your files never get uploaded.</p>
-          <ul class="facts"><li>Android, Windows</li><li>Version 0.7</li><li>MIT license</li></ul>
-        </div>
-        <div class="btns"><a class="btn" href="paperwise.html">See Paperwise</a></div>
-      </article>
-
-      <article class="app-row st">
-        <img src="img/stamply-icon.png" alt="" width="96" height="96">
-        <div>
-          <h2><a href="stamply.html">Stamply</a></h2>
-          <p>Do I need a visa? Check entry rules for 199 passports in 20 languages, even at the airport with no internet.</p>
-          <ul class="facts"><li>Android, Windows</li><li>Version 0.4</li><li>MIT license</li></ul>
-        </div>
-        <div class="btns"><a class="btn" href="stamply.html">See Stamply</a></div>
-      </article>
-    </section>
-
-    <section class="section">
-      <h2>What every Lumio app promises</h2>
-      <ul class="promises">
-        <li>
-          <h3>Offline first</h3>
-          <p>Every feature works without internet. The only optional requests are "Check for updates" (GitHub builds only) and, in Stamply, "Update data". Both only ask GitHub for a newer file.</p>
-        </li>
-        <li>
-          <h3>No ads, no tracking</h3>
-          <p>No analytics, no accounts and no data collection. What you type stays on your device.</p>
-        </li>
-        <li>
-          <h3>Open source</h3>
-          <p>All code is public on GitHub. Anyone can read it, build it or suggest a change.</p>
-        </li>
+    <aside class="tile f1 t-dark airplane" aria-label="Airplane mode demo">
+      <label class="airplane-row" for="plane"><span>Airplane mode</span><input class="switch" type="checkbox" id="plane" checked></label>
+      <ul class="airplane-apps">
+        <li><img src="img/calculator-icon.png" alt="" width="36" height="36">Calculator<span class="ok">Works</span></li>
+        <li><img src="img/pockettally-icon.png" alt="" width="36" height="36">PocketTally<span class="ok">Works</span></li>
+        <li><img src="img/paperwise-icon.png" alt="" width="36" height="36">Paperwise<span class="ok">Works</span></li>
+        <li><img src="img/stamply-icon.png" alt="" width="36" height="36">Stamply<span class="ok">Works</span></li>
       </ul>
-    </section>
+      <p class="airplane-note" id="plane-note" aria-live="polite">Your data never leaves your phone.</p>
+    </aside>
+  </div>
+
+  <div class="bento" id="apps">
+    <a class="tile f1 app-tile " href="calculator.html" aria-label="Calculator">
+      <img class="ic" src="img/calculator-icon.png" alt="" width="56" height="56">
+      <h2>Calculator</h2>
+      <p>Scientific mode, an 11-category unit converter, everyday money tools and a date calculator.</p>
+      <p class="facts">Android &middot; v1.4.1 &middot; MIT</p>
+      <img class="phone" src="img/calculator-calculator.jpg" alt="Calculator screen" width="240" height="300" loading="lazy">
+    </a>
+    <a class="tile f1 app-tile t-blue" href="pockettally.html" aria-label="PocketTally">
+      <img class="ic" src="img/pockettally-icon.png" alt="" width="56" height="56">
+      <h2>PocketTally</h2>
+      <p>Every coin, counted. Income, expenses, budgets and split bills in 20 languages. No internet permission.</p>
+      <p class="facts">Android &middot; v1.3.8 &middot; GPL-3.0</p>
+      <img class="phone" src="img/pockettally-home.jpg" alt="PocketTally home screen" width="240" height="300" loading="lazy">
+    </a>
+    <a class="tile f1 app-tile t-pink" href="paperwise.html" aria-label="Paperwise">
+      <img class="ic" src="img/paperwise-icon.png" alt="" width="56" height="56">
+      <h2>Paperwise</h2>
+      <p>13 private PDF tools: merge, split, scan, compress, sign, protect and more. Files never leave your phone.</p>
+      <p class="facts">Android &middot; v1.0.0 &middot; MIT</p>
+      <img class="phone" src="img/paperwise-home.jpg" alt="Paperwise home screen" width="240" height="300" loading="lazy">
+    </a>
+    <a class="tile f2 app-tile wide t-orange" href="stamply.html" aria-label="Stamply">
+      <div style="flex:1 1 260px;display:flex;flex-direction:column;gap:8px">
+        <img class="ic" src="img/stamply-icon.png" alt="" width="56" height="56">
+        <h2>Stamply</h2>
+        <p>Do I need a visa? Entry rules for 199 passports in 20 languages, with an offline world map, trip planner and Schengen 90/180 calculator.</p>
+        <p class="facts">Android &middot; v0.8.0 &middot; MIT</p>
+      </div>
+      <img class="phone" src="img/stamply-check.jpg" alt="Stamply check screen" width="200" height="260" loading="lazy">
+    </a>
+    <div class="tile f1" style="display:flex;flex-direction:column;justify-content:center;gap:12px">
+      <h2>Open source</h2>
+      <p>Every line of code is public. Read it, build it, improve it.</p>
+      <div class="btns" style="margin-top:4px"><a class="btn" href="https://github.com/lumio-apps" style="background:var(--ink);color:var(--base)">View on GitHub</a></div>
+    </div>
+  </div>
+
+  <div class="bento">
+    <div class="tile f1">
+      <h3>Offline first</h3>
+      <p>Every feature works without internet. Some builds have an optional button that asks GitHub for a newer file, and nothing else.</p>
+    </div>
+    <div class="tile f1">
+      <h3>No ads, no tracking</h3>
+      <p>No analytics, no accounts, no data collection. What you type stays on your device.</p>
+    </div>
+    <div class="tile f1">
+      <h3>Open source</h3>
+      <p>All code is public on GitHub. Anyone can read it, build it or suggest a change.</p>
+    </div>
   </div>
   <script>
     (function () {
@@ -119,12 +116,13 @@
       });
     })();
   </script>
+</div>
 </main>
 
 <footer class="site-footer">
   <div class="wrap">
     <span>&copy; 2026 Lumio Apps. Free and open source.</span>
-    <nav aria-label="Footer">
+    <nav aria-label="Apps">
       <a href="index.html">All apps</a>
       <a href="calculator.html">Calculator</a>
       <a href="pockettally.html">PocketTally</a>

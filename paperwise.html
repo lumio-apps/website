@@ -3,10 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
   <title>Paperwise by Lumio Apps</title>
-  <meta name="description" content="Paperwise is a private PDF toolkit for Android that works fully offline: read, merge, split, scan and convert PDFs. No ads, no tracking.">
+  <meta name="description" content="Paperwise is a private PDF toolkit for Android that works fully offline: merge, split, scan, compress, sign, protect and search PDFs. No ads, no tracking, no internet permission.">
   <meta property="og:title" content="Paperwise by Lumio Apps">
-  <meta property="og:description" content="Paperwise is a private PDF toolkit for Android that works fully offline: read, merge, split, scan and convert PDFs. No ads, no tracking.">
+  <meta property="og:description" content="Paperwise is a private PDF toolkit for Android that works fully offline: merge, split, scan, compress, sign, protect and search PDFs. No ads, no tracking, no internet permission.">
   <meta property="og:image" content="https://lumio-apps.online/img/paperwise-icon.png">
   <link rel="icon" href="img/paperwise-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,162 +16,156 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="pw">
+<a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span>Lumio Apps</a>
-    <nav class="site-nav" aria-label="Main">
-        <a href="calculator.html">Calculator</a>
-        <a href="pockettally.html">PocketTally</a>
-        <a href="paperwise.html" aria-current="page">Paperwise</a>
-        <a href="stamply.html">Stamply</a>
-        <a href="https://github.com/lumio-apps">GitHub</a>
-    </nav>
+    <div class="bar">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span>Lumio Apps</a>
+      <nav class="site-nav" aria-label="Main">
+      <a href="calculator.html">Calculator</a>
+      <a href="pockettally.html">PocketTally</a>
+      <a href="paperwise.html" aria-current="page">Paperwise</a>
+      <a href="stamply.html">Stamply</a>
+        <a class="gh" href="https://github.com/lumio-apps">GitHub</a>
+      </nav>
+    </div>
   </div>
 </header>
 
-<main>
-  <div class="wrap">
-    <div class="app-hero">
-      <img class="icon" src="img/paperwise-icon.png" alt="" width="132" height="132">
+<main id="main">
+<div class="wrap">
+  <div class="bento">
+    <div class="tile f2 t-hero app-hero">
+      <img class="icon" src="img/paperwise-icon.png" alt="" width="88" height="88">
       <div>
         <h1>Paperwise</h1>
-        <p class="lead">A private PDF toolkit that works fully offline. Read, merge, split, scan and convert PDFs on your phone, and your files never leave it.</p>
-        <p class="platforms">Android 7.0 or newer and Windows 10 or 11 &middot; Free &middot; New in 2026</p>
+        <p class="lead">Private PDF tools for Android, fully offline. Merge, split, sign, scan, compress, protect and search PDFs, all on your phone. No internet permission.</p>
+        <p class="platforms">Android 7.0 or newer &middot; Free &middot; Google Play coming soon</p>
         <div class="btns">
-          <a class="btn" href="https://github.com/lumio-apps/paperwise/releases/latest">Download APK</a>
-          <a class="btn ghost" href="https://github.com/lumio-apps/paperwise">Source code on GitHub</a>
+          <a class="btn light" href="https://github.com/lumio-apps/paperwise/releases/latest">Download APK</a>
+          <a class="btn ghost" href="https://github.com/lumio-apps/paperwise">Source code</a>
         </div>
       </div>
     </div>
+    <div class="tile f1 phone-tile">
+      <img src="img/paperwise-home.jpg" alt="Home screen with colorful tool tiles" width="250" height="400">
+    </div>
   </div>
-  <section class="shots-band" aria-labelledby="shots-title">
-    <div class="wrap">
+  <div class="bento">
+    <section class="tile f3 shots-tile" aria-labelledby="shots-title">
       <h2 id="shots-title">Screenshots</h2>
-      <div class="shots">
-        <figure><img src="img/paperwise-home.jpg" alt="Home screen with colored tool tiles" width="540" height="1112" loading="lazy"><figcaption>Pick a tool</figcaption></figure>
-        <figure><img src="img/paperwise-files.jpg" alt="Your files screen" width="540" height="1112" loading="lazy"><figcaption>Your files</figcaption></figure>
-        <figure><img src="img/paperwise-settings.jpg" alt="Settings screen" width="540" height="1112" loading="lazy"><figcaption>Settings</figcaption></figure>
+      <div class="shots" tabindex="0" role="group" aria-label="Screenshots, scroll sideways">
+        <figure><img src="img/paperwise-home.jpg" alt="Home screen with colorful tool tiles" width="200" height="405" loading="lazy"><figcaption>Pick a tool</figcaption></figure>
+        <figure><img src="img/paperwise-tools.jpg" alt="More tools: text from scans, protect, edit and sign, markup, search" width="200" height="405" loading="lazy"><figcaption>More tools</figcaption></figure>
+        <figure><img src="img/paperwise-files.jpg" alt="Your files with search and sort" width="200" height="405" loading="lazy"><figcaption>Your files</figcaption></figure>
+        <figure><img src="img/paperwise-settings-dark.jpg" alt="Settings in dark mode" width="200" height="405" loading="lazy"><figcaption>Dark mode</figcaption></figure>
       </div>
+    </section>
+  </div>  <div class="bento">
+    <div class="tile f3 t-accent">
+      <h2>Why Paperwise</h2>
+      <p>Most PDF apps upload your files, show ads or ask you to sign in. Paperwise does none of that. Every tool runs on your phone, and the app has <b>no internet permission at all</b>, so it could not send your documents anywhere even if it wanted to. The code is open, so you can check that yourself.</p>
     </div>
-  </section>
-  <div class="wrap">
-    <section class="section">
-      <h2>What you can do</h2>
-      <div class="features">
-        <div>
-          <h3>Scan to PDF</h3>
-          <p>Take a photo of a page with the camera, or pick one from the gallery. Drag the four corners onto the page edges and Paperwise straightens it. Pick a look: Original, Magic color, Black &amp; white or Gray. Add more pages, reorder them and make one PDF.</p>
-        </div>
-        <div>
-          <h3>PDF to image</h3>
-          <p>Save the pages of a PDF as JPG or PNG. Choose the quality (standard, high or best) and all pages or only some, like <code>1-3, 7</code>.</p>
-        </div>
-        <div>
-          <h3>Page tools</h3>
-          <p>Open a PDF as a grid of page previews. Select pages, then move them, rotate them, delete them or extract them into a new PDF. You can also hold a page and drag it to a new place. Your original PDF is never changed.</p>
-        </div>
-        <div>
-          <h3>Read PDFs</h3>
-          <p>Open any PDF inside Paperwise. Zoom, jump to a page, browse page thumbnails, and open locked PDFs with their password. Choose Paperwise when you tap a PDF in your file manager, a chat app or email.</p>
-        </div>
-        <div>
-          <h3>Continue reading</h3>
-          <p>Paperwise remembers the page you stopped on and shows a "Continue reading" card in Your files. Star the PDFs you use most and filter them.</p>
-        </div>
-        <div>
-          <h3>Lock and unlock PDF</h3>
-          <p>Protect a PDF with a password (AES-128). Paperwise checks that the new file opens with your password and not without it, and never stores your password. To unlock, type the password and get an unlocked copy.</p>
-        </div>
-        <div>
-          <h3>Watermark</h3>
-          <p>Stamp text or a picture on every page, centered or repeated, in three sizes and strengths. Locked and watermarked copies are redrawn as pictures, so their text can no longer be selected. Your original is never changed.</p>
-        </div>
-        <div>
-          <h3>Compress PDF</h3>
-          <p>Choose Light, Balanced or Strong and see the expected size before you start. Works best on scans and photo PDFs. If a PDF would not get smaller, nothing is saved.</p>
-        </div>
-        <div>
-          <h3>Image privacy</h3>
-          <p>See what is hidden inside your photos (location, phone name, date) and save a clean copy. Resize, compress, or blur and hide faces, number plates and text. Works on many photos at once.</p>
-        </div>
-        <div>
-          <h3>Merge PDF</h3>
-          <p>Join two or more PDFs into one, and drag them into the order you want.</p>
-        </div>
-        <div>
-          <h3>Split PDF</h3>
-          <p>Cut a PDF by page ranges like <code>1-4, 5-10</code>, or make one file per page. A colored page grid shows which pages go into which file.</p>
-        </div>
-        <div>
-          <h3>Image to PDF</h3>
-          <p>Pick photos from your gallery or take new ones with the camera. Reorder them, then choose page size (A4, Letter or fit to image), orientation and margin.</p>
-        </div>
-        <div>
-          <h3>Your files</h3>
-          <p>Every PDF you make is kept in Paperwise. Open, share, save to your phone, rename or delete it.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="privacy">
-        <h2>Private by design</h2>
-        <p>All PDF work happens on your phone. Files stay in the app's own folder until you share or save them. There are no ads, no accounts and no tracking. The internet is used only when you tap "Check for updates". Read the full <a href="privacy-paperwise.html" style="color:inherit">privacy policy</a>.</p>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>What's coming</h2>
-      <p class="measure" style="margin-bottom:20px">Paperwise grows one small update at a time, with one group of features in each update.</p>
-      <ol class="roadmap">
-        <li class="now"><span class="v">v0.1</span><span class="t">Foundation</span><span>Merge, split, image to PDF, your files list, update checker (available now)</span></li>
-        <li class="now"><span class="v">v0.2</span><span class="t">PDF viewer</span><span>Reader with zoom, page jump and thumbnails, continue reading, favorites, open PDFs from other apps (available now)</span></li>
-        <li class="now"><span class="v">v0.3</span><span class="t">Page tools</span><span>Reorder, rotate, delete and extract pages on a page grid (available now)</span></li>
-        <li class="now"><span class="v">v0.4</span><span class="t">Convert and scan</span><span>PDF to JPG or PNG, scan paper to PDF with the camera, crop and filters (available now)</span></li>
-        <li class="now"><span class="v">v0.5</span><span class="t">Image privacy</span><span>Remove photo location and device info, resize, compress, blur or hide parts of a photo (available now)</span></li>
-        <li class="now"><span class="v">v0.6</span><span class="t">Compress</span><span>Light, balanced and strong PDF compression with a size estimate (available now)</span></li>
-        <li class="now"><span class="v">v0.7</span><span class="t">Security</span><span>Password lock and unlock, text or image watermark (available now)</span></li>
-        <li><span class="v">v0.8</span><span class="t">Edit</span><span>Add text, signature, page numbers, header and footer</span></li>
-        <li><span class="v">v0.9</span><span class="t">Markup and search</span><span>Highlight, pen and shapes, search words inside a PDF</span></li>
-        <li><span class="v">v0.10</span><span class="t">Your way</span><span>Dark mode, more languages, sort and search files, backup</span></li>
-        <li><span class="v">v0.11</span><span class="t">Text recognition</span><span>Offline text recognition for scanned pages, searchable PDFs</span></li>
-        <li><span class="v">v1.0</span><span class="t">Ready to publish</span><span>Final polish, then GitHub Releases, F-Droid and Google Play</span></li>
-      </ol>
-    </section>
-
-    <section class="section">
-      <h2>Install</h2>
-      <ol class="steps measure">
-        <li>Open the <a href="https://github.com/lumio-apps/paperwise/releases/latest">latest release</a> on GitHub.</li>
-        <li>Download <code>Paperwise-vX.Y.Z.apk</code> and open it on your phone.</li>
-        <li>If asked, allow installing apps from your browser or file manager.</li>
-      </ol>
-      <p class="measure">Already installed? Tap <b>Check for updates</b> in Settings.</p>
-      <p class="measure">On Windows 10 or 11, download <code>Paperwise-vX.Y.Z-windows.zip</code>, unzip the whole folder and run <code>paperwise.exe</code>. If SmartScreen warns you, choose <b>More info</b>, then <b>Run anyway</b>.</p>
-    </section>
-
-    <section class="section">
-      <h2>App details</h2>
-      <div class="table-wrap">
-        <table>
-          <tr><th>Platforms</th><td>Android 7.0 or newer, Windows 10 or 11</td></tr>
-          <tr><th>Current version</th><td>0.7.0</td></tr>
-          <tr><th>Price</th><td>Free, no ads, no in-app purchases</td></tr>
-          <tr><th>Internet</th><td>Not needed, only for the optional update check</td></tr>
-          <tr><th>License</th><td>MIT</td></tr>
-          <tr><th>Privacy policy</th><td><a href="privacy-paperwise.html">Read the privacy policy</a></td></tr>
-          <tr><th>Source code</th><td><a href="https://github.com/lumio-apps/paperwise">github.com/lumio-apps/paperwise</a></td></tr>
-          <tr><th>Report a problem</th><td><a href="https://github.com/lumio-apps/paperwise/issues">GitHub Issues</a></td></tr>
-        </table>
-      </div>
-    </section>
+  </div>  <h2 style="margin:40px 8px 0;font-size:clamp(28px,4vw,40px)">13 tools</h2>  <div class="bento" aria-label="Features">
+    <div class="tile f1">
+      <h3>Merge PDF</h3>
+      <p>Join PDFs into one and drag them into the order you want.</p>
+    </div>
+    <div class="tile f1 t-blue">
+      <h3>Split PDF</h3>
+      <p>Cut by page ranges like <code>1-4, 5-10</code> or make one file per page.</p>
+    </div>
+    <div class="tile f1 t-pink">
+      <h3>Page tools</h3>
+      <p>Reorder, rotate, delete and extract pages on a visual page grid.</p>
+    </div>
+    <div class="tile f1 t-orange">
+      <h3>Image to PDF</h3>
+      <p>Turn photos from the gallery or camera into a PDF: A4, Letter or fit image.</p>
+    </div>
+    <div class="tile f1 t-green">
+      <h3>PDF to image</h3>
+      <p>Save pages as JPG or PNG, all pages or just some.</p>
+    </div>
+    <div class="tile f1">
+      <h3>Scan to PDF</h3>
+      <p>Photograph paper, straighten it with four corners, pick a look and build a PDF.</p>
+    </div>
+    <div class="tile f1 t-blue">
+      <h3>Compress</h3>
+      <p>Light, Balanced or Strong, with the expected size shown first.</p>
+    </div>
+    <div class="tile f1 t-pink">
+      <h3>Text from scans</h3>
+      <p>Make scanned PDFs searchable, or copy their text. Offline, English.</p>
+    </div>
+    <div class="tile f1 t-orange">
+      <h3>Protect</h3>
+      <p>Lock with a password (AES-128), unlock, or add a text or image watermark.</p>
+    </div>
+    <div class="tile f1 t-green">
+      <h3>Edit and sign</h3>
+      <p>Type text anywhere, draw and place your signature, add page numbers, headers and footers.</p>
+    </div>
+    <div class="tile f1">
+      <h3>Markup</h3>
+      <p>Highlighter, pen, boxes, ovals, lines and arrows in six colors.</p>
+    </div>
+    <div class="tile f1 t-blue">
+      <h3>Search in PDF</h3>
+      <p>Find words inside a PDF and jump between matches.</p>
+    </div>
+    <div class="tile f1 t-pink">
+      <h3>Image privacy</h3>
+      <p>Remove hidden location and device info from photos, blur faces or number plates.</p>
+    </div>
   </div>
+  <div class="bento" aria-label="Features">
+    <div class="tile f1">
+      <h3>Also built in</h3>
+      <ul><li>A PDF reader with zoom, page jump, thumbnails, Continue reading and favorites</li><li>Open PDFs from your file manager, chat apps or email with <b>Open with Paperwise</b></li><li>Search and sort your files by newest, oldest, name or size</li><li>Light, dark or system look, in English and Hindi (हिन्दी)</li><li>Backup and restore in one <code>.pwbackup</code> file you place yourself</li></ul>
+    </div>
+    <div class="tile f1 t-blue">
+      <h3>Good to know</h3>
+      <ul><li>Your original files are never changed. Every tool saves a new copy.</li><li><b>Text from scans</b> reads English text and adds the words invisibly behind your scan, so it becomes searchable.</li><li><b>Lock, Watermark and Compress</b> redraw each page as a picture, so text in those copies can't be selected.</li><li>Text you add with <b>Edit and sign</b> supports letters, numbers and keyboard symbols. Hindi covers the main screens.</li></ul>
+    </div>
+  </div>
+  <div class="bento">
+    <div class="tile f3 t-dark">
+      <h2>Private by design</h2>
+      <p>All PDF work happens on your phone. Paperwise has no internet permission, no ads, no analytics and no account. Passwords are used only to lock the file and are never stored. Text recognition uses a model bundled in the app. Read the full <a href="privacy-paperwise.html">privacy policy</a>.</p>
+    </div>
+  </div>
+  <div class="bento">
+    <div class="tile f3">
+      <h2>Install</h2>
+      <p><b>Google Play:</b> coming soon.</p>
+      <p><b>From GitHub:</b> download the latest <code>.apk</code> from the <a href="https://github.com/lumio-apps/paperwise/releases/latest">Releases page</a>, open it on your phone and allow installs from your browser or file manager when Android asks. Requires Android 7.0 or newer.</p>
+      <p class="note">The GitHub APK and the Google Play version are signed with different keys, so Android will not update one over the other. To switch, use <b>Settings &rsaquo; Back up your files</b> first, uninstall, install the other one, then restore from the backup. The app does not update itself, so download the new APK from Releases when a new version comes out.</p>
+    </div>
+  </div>
+  <div class="bento">
+    <div class="tile f3">
+      <h2>App details</h2>
+      <dl class="dl">
+      <div><dt>Platform</dt><dd>Android 7.0 or newer</dd></div>
+      <div><dt>Current version</dt><dd>1.0.0</dd></div>
+      <div><dt>Price</dt><dd>Free, no ads, no in-app purchases</dd></div>
+      <div><dt>Internet</dt><dd>None. The app has no internet permission</dd></div>
+      <div><dt>License</dt><dd>MIT</dd></div>
+      <div><dt>Privacy policy</dt><dd><a href="privacy-paperwise.html">Read the privacy policy</a></dd></div>
+      <div><dt>Source code</dt><dd><a href="https://github.com/lumio-apps/paperwise">github.com/lumio-apps/paperwise</a></dd></div>
+      <div><dt>Report a problem</dt><dd><a href="https://github.com/lumio-apps/paperwise/issues">GitHub Issues</a></dd></div>
+      </dl>
+    </div>
+  </div>
+</div>
 </main>
 
 <footer class="site-footer">
   <div class="wrap">
     <span>&copy; 2026 Lumio Apps. Free and open source.</span>
-    <nav aria-label="Footer">
+    <nav aria-label="Apps">
       <a href="index.html">All apps</a>
       <a href="calculator.html">Calculator</a>
       <a href="pockettally.html">PocketTally</a>

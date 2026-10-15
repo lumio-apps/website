@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
   <title>Paperwise Privacy Policy | Lumio Apps</title>
   <meta name="description" content="Privacy policy for Paperwise by Lumio Apps. No data collected, no ads, no tracking.">
   <meta property="og:title" content="Paperwise Privacy Policy | Lumio Apps">
@@ -15,28 +16,31 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="pw">
+<a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span>Lumio Apps</a>
-    <nav class="site-nav" aria-label="Main">
-        <a href="calculator.html">Calculator</a>
-        <a href="pockettally.html">PocketTally</a>
-        <a href="paperwise.html">Paperwise</a>
-        <a href="stamply.html">Stamply</a>
-        <a href="https://github.com/lumio-apps">GitHub</a>
-    </nav>
+    <div class="bar">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span>Lumio Apps</a>
+      <nav class="site-nav" aria-label="Main">
+      <a href="calculator.html">Calculator</a>
+      <a href="pockettally.html">PocketTally</a>
+      <a href="paperwise.html">Paperwise</a>
+      <a href="stamply.html">Stamply</a>
+        <a class="gh" href="https://github.com/lumio-apps">GitHub</a>
+      </nav>
+    </div>
   </div>
 </header>
 
-<main>
-  <div class="wrap">
-    <article class="prose">
+<main id="main">
+<div class="wrap">
+  <article class="tile prose">
       <p class="crumb"><a href="privacy.html">&larr; All privacy policies</a></p>
       <h1>Paperwise Privacy Policy</h1>
       
-      <p class="meta">Last updated: 15 October 2026<br>Developer: Lumio Apps<br>Source code: <a href="https://github.com/lumio-apps/paperwise">github.com/lumio-apps/paperwise</a></p>
+      <p class="meta">Last updated: 16 October 2026<br>Developer: Lumio Apps<br>Source code: <a href="https://github.com/lumio-apps/paperwise">github.com/lumio-apps/paperwise</a></p>
 
-      <div class="callout"><b>In short:</b> All PDF and photo work happens on your device. Your files are never uploaded. The internet is used only if you tap Check for updates in the GitHub version.</div>
+      <div class="callout"><b>In short:</b> All PDF and photo work happens on your device. Your files are never uploaded. Paperwise has no internet permission.</div>
 
       <h2>Data we collect</h2>
       <p><b>None.</b> Paperwise does not collect, store on a server, transmit, share or sell any personal or usage data. Lumio Apps runs no servers for this app.</p>
@@ -48,24 +52,27 @@
       </ul>
 
       <h2>Data stored on your device</h2>
-      <p>The PDFs and pictures you create are kept in the app's own folder until you share or save them. Paperwise also remembers your favorites and the page where you stopped reading. Passwords you type to lock or unlock a PDF are used only for that action and are never stored. Photos, PDFs and camera pictures are processed on the device.</p>
+      <p>The PDFs and pictures Paperwise creates, a small list of where you stopped reading and your favorites, your saved signature if you keep one, and your settings (look, language, file order). Passwords you type to lock a PDF are used only to protect that file and are never stored. Photos, PDFs and camera pictures are processed on the device.</p>
       <p>This data never leaves your device through Paperwise. Uninstalling the app removes it.</p>
 
       <h2>Internet access</h2>
-      <p>Paperwise needs no internet to work. The GitHub version has a <b>Check for updates</b> button. Only when you tap it, the app asks the public GitHub API whether a newer version exists and, if you agree, downloads it. No personal data and none of your files are sent. GitHub's own privacy statement applies to these requests: <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a>.</p><p>The Google Play version (when published) will not contain the update check or the internet permission.</p>
+      <p>Paperwise has <b>no internet permission</b> and no update check, so it cannot send anything off your phone. Updates come through Google Play, or by installing a newer APK from GitHub yourself.</p>
 
       <h2>Permissions</h2>
       <div class="table-wrap">
         <table>
           <thead><tr><th>Permission</th><th>Which version</th><th>Why</th></tr></thead>
-          <tr><td><b>Camera</b></td><td>All versions</td><td>Only when you scan a page or take a photo yourself. Pictures stay on your device</td></tr>
-          <tr><td><b>Internet</b></td><td>GitHub APK only</td><td>Check for updates when you tap the button</td></tr>
-          <tr><td><b>Install packages</b></td><td>GitHub APK only</td><td>Install a downloaded update after you confirm</td></tr>
+          <tr><td><b>None special</b></td><td>All versions</td><td>Paperwise uses the system file picker and the system camera screen when you scan, so it only sees the files and pictures you pick</td></tr>
+          <tr><td><b>Internet</b></td><td>None</td><td>Paperwise does not ask for internet access</td></tr>
         </table>
       </div>
 
+      <h2>Text recognition (OCR)</h2>
+      <p>Text from scans uses a text recognition model bundled inside the app (Google ML Kit, on-device). The pictures of your pages are processed on your phone only and are never uploaded.</p>
+      <h2>Backup</h2>
+      <p>The backup feature creates one file on your phone. You choose where it goes. Paperwise does not upload it anywhere itself.</p>
       <h2>Files you pick</h2>
-      <p>Paperwise opens files only when you choose them with the system file or photo picker, or when you open a PDF from another app. It works on a copy and never changes your original. Photo privacy tools remove location and device details from the copy they make.</p>
+      <p>Paperwise opens files only when you choose them with the system file or photo picker, or when you open a PDF from another app. It works on a copy and never changes your original.</p>
       <h2>Children</h2>
       <p>Paperwise is not directed to children and collects no data from anyone, including children.</p>
 
@@ -78,14 +85,14 @@
       <h2>Contact</h2>
       <p>Questions about privacy? Open an issue at <a href="https://github.com/lumio-apps/paperwise/issues">https://github.com/lumio-apps/paperwise/issues</a> or see the <a href="contact.html">contact page</a>.</p>
       <p class="meta">This policy applies to Paperwise only. For the other Lumio apps and this website, see the <a href="privacy.html">main Privacy Policy</a>.</p>
-    </article>
-  </div>
+  </article>
+</div>
 </main>
 
 <footer class="site-footer">
   <div class="wrap">
     <span>&copy; 2026 Lumio Apps. Free and open source.</span>
-    <nav aria-label="Footer">
+    <nav aria-label="Apps">
       <a href="index.html">All apps</a>
       <a href="calculator.html">Calculator</a>
       <a href="pockettally.html">PocketTally</a>

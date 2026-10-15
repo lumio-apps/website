@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
   <title>Help and FAQ | Lumio Apps</title>
   <meta name="description" content="Answers to common questions about Lumio Apps: price, privacy, offline use, installing, updating and backups.">
   <meta property="og:title" content="Help and FAQ | Lumio Apps">
@@ -15,47 +16,50 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="home">
+<a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span>Lumio Apps</a>
-    <nav class="site-nav" aria-label="Main">
-        <a href="calculator.html">Calculator</a>
-        <a href="pockettally.html">PocketTally</a>
-        <a href="paperwise.html">Paperwise</a>
-        <a href="stamply.html">Stamply</a>
-        <a href="https://github.com/lumio-apps">GitHub</a>
-    </nav>
+    <div class="bar">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span>Lumio Apps</a>
+      <nav class="site-nav" aria-label="Main">
+      <a href="calculator.html">Calculator</a>
+      <a href="pockettally.html">PocketTally</a>
+      <a href="paperwise.html">Paperwise</a>
+      <a href="stamply.html">Stamply</a>
+        <a class="gh" href="https://github.com/lumio-apps">GitHub</a>
+      </nav>
+    </div>
   </div>
 </header>
 
-<main>
-  <div class="wrap">
-    <article class="prose">
+<main id="main">
+<div class="wrap">
+  <article class="tile prose">
       
       <h1>Help and FAQ</h1>
       <p class="lead">Quick answers to common questions.</p>
       <details><summary>Are the apps really free?</summary><p>Yes. There are no ads, no in-app purchases and no premium version.</p></details>
-      <details><summary>Do the apps need internet?</summary><p>No. All features work offline. The only optional internet use is the update check in the GitHub version of each app, and "Update data" in Stamply. Both only ask GitHub for a newer file.</p></details>
+      <details><summary>Do the apps need internet?</summary><p>No. All features work offline. PocketTally and Paperwise have no internet permission at all. The only optional internet use is the update check in Calculator's GitHub version and "Update data" in Stamply. Both only ask GitHub for a newer file.</p></details>
       <details><summary>What data do you collect?</summary><p>None. Your data stays on your device. See the <a href="privacy.html">Privacy Policy</a>.</p></details>
-      <details><summary>Where can I download the apps?</summary><p>From each app's page and from <a href="https://github.com/lumio-apps">GitHub Releases</a>. We are also bringing the apps to Google Play and F-Droid one by one.</p></details>
+      <details><summary>Where can I download the apps?</summary><p>From each app's page and from <a href="https://github.com/lumio-apps">GitHub Releases</a>. We are also bringing the apps to Google Play one by one.</p></details>
       <details><summary>Why can't I update my app from another source?</summary><p>The GitHub APK, the F-Droid version and the Google Play version are signed with different keys, and Android does not allow updating one with another. Install from one source only. To switch, uninstall first. This deletes the app's data, so make a backup first (PocketTally has Back up and Restore).</p></details>
-      <details><summary>How do I move my PocketTally data to a new phone or a computer?</summary><p>Open Settings, tap Back up, save the file, and on the other device tap Restore. You can also export CSV for Excel or Google Sheets.</p></details>
-      <details><summary>Windows says "Windows protected your PC". Is the app safe?</summary><p>The Windows builds are not code-signed yet, so SmartScreen warns about unknown apps. Choose <b>More info</b>, then <b>Run anyway</b>. The code is public, so you can check it or build it yourself.</p></details>
+      <details><summary>How do I move my PocketTally data to a new phone or a computer?</summary><p>Open Settings, tap Back up data, save the file, and on the new phone tap Restore from backup. You can also export CSV for Excel or Google Sheets.</p></details>
       <details><summary>Android says "Install unknown apps" is blocked.</summary><p>When you install an APK from GitHub, Android asks you to allow your browser or file manager to install apps. You can allow it just for this install and turn it off after.</p></details>
+      <details><summary>Why does Paperwise or PocketTally not check for updates?</summary><p>They have no internet permission at all, so they cannot reach the internet. Updates come through Google Play or F-Droid, or by installing a newer APK from GitHub over the old one. Your data stays.</p></details>
       <details><summary>Is Stamply's visa information always correct?</summary><p>No. It is general guidance from open data, refreshed monthly. Rules change often. Always confirm with the embassy or the official government website before you travel. See the <a href="terms.html">Terms and Disclaimer</a>.</p></details>
       <details><summary>Can Paperwise change my original PDF?</summary><p>No. Every tool saves a new file and leaves your original untouched.</p></details>
       <details><summary>I forgot the password of a PDF I locked in Paperwise.</summary><p>Paperwise never stores passwords, so we cannot recover it. Keep your passwords safe.</p></details>
       <details><summary>Can I see the code or help?</summary><p>Yes. Everything is open source on <a href="https://github.com/lumio-apps">GitHub</a>. You can report bugs, suggest features, translate or send a pull request.</p></details>
       <details><summary>How do I report a bug?</summary><p>Open an issue on the app's GitHub page. See the <a href="contact.html">contact page</a>.</p></details>
       <p style="margin-top:28px">Still stuck? See the <a href="contact.html">contact page</a>.</p>
-    </article>
-  </div>
+  </article>
+</div>
 </main>
 
 <footer class="site-footer">
   <div class="wrap">
     <span>&copy; 2026 Lumio Apps. Free and open source.</span>
-    <nav aria-label="Footer">
+    <nav aria-label="Apps">
       <a href="index.html">All apps</a>
       <a href="calculator.html">Calculator</a>
       <a href="pockettally.html">PocketTally</a>

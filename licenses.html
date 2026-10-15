@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
   <title>Licenses | Lumio Apps</title>
   <meta name="description" content="Open-source licenses and credits for Lumio Apps and the software, fonts and data they use.">
   <meta property="og:title" content="Licenses | Lumio Apps">
@@ -15,22 +16,25 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="home">
+<a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span>Lumio Apps</a>
-    <nav class="site-nav" aria-label="Main">
-        <a href="calculator.html">Calculator</a>
-        <a href="pockettally.html">PocketTally</a>
-        <a href="paperwise.html">Paperwise</a>
-        <a href="stamply.html">Stamply</a>
-        <a href="https://github.com/lumio-apps">GitHub</a>
-    </nav>
+    <div class="bar">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span>Lumio Apps</a>
+      <nav class="site-nav" aria-label="Main">
+      <a href="calculator.html">Calculator</a>
+      <a href="pockettally.html">PocketTally</a>
+      <a href="paperwise.html">Paperwise</a>
+      <a href="stamply.html">Stamply</a>
+        <a class="gh" href="https://github.com/lumio-apps">GitHub</a>
+      </nav>
+    </div>
   </div>
 </header>
 
-<main>
-  <div class="wrap">
-    <article class="prose">
+<main id="main">
+<div class="wrap">
+  <article class="tile prose">
       
       <h1>Licenses</h1>
       <p class="lead">Free software, with credit to the people who made the parts.</p>
@@ -51,20 +55,22 @@
       <ul>
         <li><b>Flutter</b> and the Dart packages the apps use (BSD-3-Clause and similar licenses)</li>
         <li><b>Outfit</b> font (SIL Open Font License 1.1) in Paperwise and on this website</li>
+        <li><b>DejaVu</b> fonts in PocketTally (free DejaVu license)</li>
+        <li><b>Google ML Kit</b> text recognition, bundled and running on the device, and <b>pointycastle</b> for PDF encryption, in Paperwise</li>
         <li><b>PDFium</b> through the <code>pdfrx</code> package, and the <code>pdf</code> package, in Paperwise</li>
         <li><b><a href="https://github.com/imorte/passport-index-data">Passport Index Data</a></b> (MIT), the visa data behind Stamply</li>
         <li><b><a href="https://cldr.unicode.org/">Unicode CLDR</a></b> (Unicode License), country names in Stamply</li>
         <li>Other fonts bundled in individual apps keep their own open licenses, which are included in the repositories</li>
       </ul>
       <p>All trademarks belong to their owners.</p>
-    </article>
-  </div>
+  </article>
+</div>
 </main>
 
 <footer class="site-footer">
   <div class="wrap">
     <span>&copy; 2026 Lumio Apps. Free and open source.</span>
-    <nav aria-label="Footer">
+    <nav aria-label="Apps">
       <a href="index.html">All apps</a>
       <a href="calculator.html">Calculator</a>
       <a href="pockettally.html">PocketTally</a>

@@ -3,10 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
   <title>Stamply: Visa Checker by Lumio Apps</title>
-  <meta name="description" content="Stamply tells you if you need a visa, even offline. Visa and entry requirements for 199 passports in 20 languages. No ads, no tracking, no account.">
+  <meta name="description" content="Stamply tells you if you need a visa, even offline. Visa and entry requirements for 199 passports in 20 languages, with a world map, trip planner and Schengen calculator.">
   <meta property="og:title" content="Stamply: Visa Checker by Lumio Apps">
-  <meta property="og:description" content="Stamply tells you if you need a visa, even offline. Visa and entry requirements for 199 passports in 20 languages. No ads, no tracking, no account.">
+  <meta property="og:description" content="Stamply tells you if you need a visa, even offline. Visa and entry requirements for 199 passports in 20 languages, with a world map, trip planner and Schengen calculator.">
   <meta property="og:image" content="https://lumio-apps.online/img/stamply-icon.png">
   <link rel="icon" href="img/stamply-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,164 +16,153 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="st">
+<a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span>Lumio Apps</a>
-    <nav class="site-nav" aria-label="Main">
-        <a href="calculator.html">Calculator</a>
-        <a href="pockettally.html">PocketTally</a>
-        <a href="paperwise.html">Paperwise</a>
-        <a href="stamply.html" aria-current="page">Stamply</a>
-        <a href="https://github.com/lumio-apps">GitHub</a>
-    </nav>
+    <div class="bar">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span>Lumio Apps</a>
+      <nav class="site-nav" aria-label="Main">
+      <a href="calculator.html">Calculator</a>
+      <a href="pockettally.html">PocketTally</a>
+      <a href="paperwise.html">Paperwise</a>
+      <a href="stamply.html" aria-current="page">Stamply</a>
+        <a class="gh" href="https://github.com/lumio-apps">GitHub</a>
+      </nav>
+    </div>
   </div>
 </header>
 
-<main>
-  <div class="wrap">
-    <div class="app-hero">
-      <img class="icon" src="img/stamply-icon.png" alt="" width="132" height="132">
+<main id="main">
+<div class="wrap">
+  <div class="bento">
+    <div class="tile f2 t-hero app-hero">
+      <img class="icon" src="img/stamply-icon.png" alt="" width="88" height="88">
       <div>
         <h1>Stamply</h1>
         <p class="lead">Do I need a visa? Find out in seconds, even offline. Visa and entry rules for 199 passports to every destination, in 20 languages.</p>
-        <p class="platforms">Android and Windows &middot; 20 languages &middot; Works offline &middot; Free</p>
+        <p class="platforms">Android &middot; 20 languages &middot; Works offline &middot; Google Play coming soon</p>
         <div class="btns">
-          <a class="btn" href="https://github.com/lumio-apps/stamply/releases/latest">Download APK</a>
-          <a class="btn ghost" href="https://github.com/lumio-apps/stamply">Source code on GitHub</a>
+          <a class="btn light" href="https://github.com/lumio-apps/stamply/releases/latest">Download APK</a>
+          <a class="btn ghost" href="https://github.com/lumio-apps/stamply">Source code</a>
         </div>
       </div>
     </div>
+    <div class="tile f1 phone-tile">
+      <img src="img/stamply-check.jpg" alt="Check screen: pick your passport and destination" width="250" height="400">
+    </div>
   </div>
-  <section class="shots-band" aria-labelledby="shots-title">
-    <div class="wrap">
+  <div class="bento">
+    <section class="tile f3 shots-tile" aria-labelledby="shots-title">
       <h2 id="shots-title">Screenshots</h2>
-      <div class="shots">
-        <figure><img src="img/stamply-home.jpg" alt="Check screen: pick your passport and destination" width="540" height="1114" loading="lazy"><figcaption>Check</figcaption></figure>
-        <figure><img src="img/stamply-explore.jpg" alt="Explore screen: every destination for your passport" width="540" height="1114" loading="lazy"><figcaption>Explore</figcaption></figure>
-        <figure><img src="img/stamply-settings.jpg" alt="Settings with theme and visa data updates" width="540" height="1114" loading="lazy"><figcaption>Settings</figcaption></figure>
-        <figure><img src="img/stamply-about.jpg" alt="About screen with privacy and data source" width="540" height="1114" loading="lazy"><figcaption>About</figcaption></figure>
-      </div>
-    </div>
-  </section>
-  <div class="wrap">
-    <section class="section">
-      <h2>Features</h2>
-      <div class="features">
-        <div>
-          <h3>Check</h3>
-          <ul>
-            <li>Pick your <b>passport</b> and <b>destination</b> from a searchable list of 199 countries with <b>flags</b>, and swap them with one tap</li>
-            <li>A clear result card styled like a passport stamp: visa-free, visa on arrival, ETA, e-Visa or visa required</li>
-            <li><b>Share</b> the result as a picture on WhatsApp, Instagram or anywhere</li>
-            <li><b>Allowed stay</b> in days, where it is known</li>
-            <li><b>Before you fly</b> tips: return ticket, proof of funds, and a warning about fake e-Visa websites</li>
-            <li><b>Passport expiry check:</b> add your expiry date and see if you meet the common 6-month rule</li>
-            <li><b>Recent checks</b> with their status at a glance</li>
-          </ul>
-        </div>
-        <div>
-          <h3>20 languages</h3>
-          <ul>
-            <li>English, हिन्दी, বাংলা, ગુજરાતી, ಕನ್ನಡ, മലയാളം, मराठी, ਪੰਜਾਬੀ, தமிழ், తెలుగు, اردو, العربية, 中文, 日本語, Español, Français, Português, Русский, Bahasa Indonesia, Հայերեն</li>
-            <li>Country names are translated too, so you can search in your own language</li>
-            <li>Right-to-left layout for Arabic and Urdu</li>
-            <li>A welcome screen on first launch to pick your language and passport</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Passports</h3>
-          <ul>
-            <li><b>Passport power:</b> how many destinations you reach without a visa in advance, and your <b>rank</b> among 199 passports</li>
-            <li><b>World ranking</b> of all passports</li>
-            <li><b>Second passport</b> for dual citizens: switch with one tap, and the result tells you when your other passport is easier</li>
-            <li><b>Compare two passports</b> side by side and see exactly where their rules differ</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Explore</h3>
-          <ul>
-            <li>Every destination for your passport in one list</li>
-            <li>See how many countries you can visit without a visa in advance</li>
-            <li>Filter by status and search any destination</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Saved</h3>
-          <p>Bookmark trips from the result screen. A <b>Changed</b> badge appears when a data update changes the rule for a saved trip. Swipe to remove.</p>
-        </div>
-        <div>
-          <h3>Settings</h3>
-          <ul>
-            <li>Passport expiry date, kept only on your device</li>
-            <li><b>Language</b> picker with 20 languages</li>
-            <li>Light, dark or system theme</li>
-            <li><b>Update data:</b> download the latest visa data with one tap</li>
-            <li><b>Check for updates</b> for the app itself</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>How the data works</h2>
-      <ul class="promises">
-        <li>
-          <h3>Built in</h3>
-          <p>All visa data ships inside the app, so Stamply works with no internet at all, even at the airport.</p>
-        </li>
-        <li>
-          <h3>Optional update</h3>
-          <p><b>Settings &rsaquo; Update data</b> downloads one static file from GitHub. No server, no account and no personal data sent.</p>
-        </li>
-        <li>
-          <h3>Refreshed monthly</h3>
-          <p>The data file is rebuilt on the 1st of every month from the open <a href="https://github.com/imorte/passport-index-data">Passport Index Data</a>.</p>
-        </li>
-      </ul>
-      <p class="measure note"><b>General guidance only.</b> Visa rules change often. Always confirm with the embassy or the official government website of your destination before you travel.</p>
-    </section>
-
-    <section class="section">
-      <div class="privacy">
-        <h2>Private by design</h2>
-        <p>No ads, no analytics, no crash reporting and no account. Your passport, saved trips and recent checks stay on your device. The internet is used only when you tap "Update data" or "Check for updates". Read the full <a href="privacy-stamply.html" style="color:inherit">privacy policy</a>.</p>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>Install</h2>
-      <ol class="steps measure">
-        <li>Open the <a href="https://github.com/lumio-apps/stamply/releases/latest">latest release</a> on GitHub.</li>
-        <li>Download the APK and open it on your phone.</li>
-        <li>If asked, allow installing apps from your browser or file manager.</li>
-      </ol>
-      <p class="measure">On Windows 10 or 11, download <code>Stamply-X.Y.Z-windows.zip</code>, unzip it and run <code>stamply.exe</code>. More ways to get Stamply, such as Google Play and F-Droid, are planned.</p>
-    </section>
-
-    <section class="section">
-      <h2>App details</h2>
-      <div class="table-wrap">
-        <table>
-          <tr><th>Platforms</th><td>Android, Windows</td></tr>
-          <tr><th>Current version</th><td>0.4.0</td></tr>
-          <tr><th>Price</th><td>Free, no ads, no in-app purchases</td></tr>
-          <tr><th>Internet</th><td>Not needed, only for the optional data and app updates</td></tr>
-          <tr><th>Languages</th><td>20</td></tr>
-          <tr><th>Visa data</th><td><a href="https://github.com/imorte/passport-index-data">Passport Index Data</a> (MIT)</td></tr>
-          <tr><th>Country names</th><td><a href="https://cldr.unicode.org/">Unicode CLDR</a></td></tr>
-          <tr><th>License</th><td>MIT</td></tr>
-          <tr><th>Source code</th><td><a href="https://github.com/lumio-apps/stamply">github.com/lumio-apps/stamply</a></td></tr>
-          <tr><th>Privacy policy</th><td><a href="privacy-stamply.html">Read the privacy policy</a></td></tr>
-        </table>
+      <div class="shots" tabindex="0" role="group" aria-label="Screenshots, scroll sideways">
+        <figure><img src="img/stamply-check.jpg" alt="Check: pick your passport and destination" width="200" height="417" loading="lazy"><figcaption>Check</figcaption></figure>
+        <figure><img src="img/stamply-explore.jpg" alt="Explore: passport power and every destination" width="200" height="417" loading="lazy"><figcaption>Explore</figcaption></figure>
+        <figure><img src="img/stamply-ranking.jpg" alt="World passport ranking" width="200" height="417" loading="lazy"><figcaption>Ranking</figcaption></figure>
+        <figure><img src="img/stamply-map.jpg" alt="Offline world map colored by your passport" width="200" height="417" loading="lazy"><figcaption>World map</figcaption></figure>
+        <figure><img src="img/stamply-compare.jpg" alt="Compare two passports" width="200" height="417" loading="lazy"><figcaption>Compare</figcaption></figure>
+        <figure><img src="img/stamply-settings.jpg" alt="Settings: update data, privacy and licenses" width="200" height="417" loading="lazy"><figcaption>Settings</figcaption></figure>
       </div>
     </section>
   </div>
+  <p style="margin:12px 8px 0;color:var(--muted)">Dark glass theme shown. A light theme is built in too.</p>
+  <h2 style="margin:40px 8px 0;font-size:clamp(28px,4vw,40px)">Why Stamply</h2>  <div class="bento">
+    <div class="tile f1 t-orange">
+      <h3>Fast</h3>
+      <p>Two taps and you see the rule for any passport and destination.</p>
+    </div>
+    <div class="tile f1">
+      <h3>Offline</h3>
+      <p>All data is inside the app. It works at the airport with no signal.</p>
+    </div>
+    <div class="tile f1 t-blue">
+      <h3>Private</h3>
+      <p>No ads, no tracking, no account. Your passport and trips never leave your phone.</p>
+    </div>
+    <div class="tile f1 t-green">
+      <h3>More than one answer</h3>
+      <p>Compare passports, plan a trip, track Schengen 90/180 days and get passport expiry reminders.</p>
+    </div>
+  </div>
+  <h2 style="margin:40px 8px 0;font-size:clamp(28px,4vw,40px)">Features</h2>  <div class="bento" aria-label="Features">
+    <div class="tile f1">
+      <h3>Check</h3>
+      <ul><li>Pick your <b>passport</b> and <b>destination</b> from a searchable list of 199 countries with <b>flags</b>, and swap them with one tap</li><li>A result card styled like a passport stamp: visa-free, visa on arrival, ETA, e-Visa or visa required</li><li><b>Share</b> the result as a picture</li><li><b>Allowed stay</b> in days, where it is known</li><li><b>Before you fly</b> tips, and a warning about fake e-Visa websites</li><li><b>Passport expiry check</b> against the common 6-month rule</li></ul>
+    </div>
+    <div class="tile f1 t-blue">
+      <h3>Passports</h3>
+      <ul><li><b>Passport power:</b> how many destinations you reach without a visa in advance, and your rank among 199 passports</li><li><b>World ranking</b> of all passports</li><li><b>Second passport</b> for dual citizens: switch with one tap, and the result tells you when your other passport is easier</li><li><b>Compare two passports</b> side by side</li></ul>
+    </div>
+    <div class="tile f1 t-pink">
+      <h3>Map, widget and shortcuts</h3>
+      <ul><li><b>Offline world map:</b> every country colored by what your passport needs. Tap a country, pinch to zoom</li><li><b>Home-screen widget</b> with your passport and how many destinations it reaches</li><li><b>App shortcuts:</b> long-press the icon for Check, Explore, World map and Schengen</li></ul>
+    </div>
+    <div class="tile f1 t-orange">
+      <h3>Trips</h3>
+      <ul><li><b>Trip planner:</b> add several countries and see the rule for each, and how many need something before you fly</li><li><b>Schengen 90/180 calculator:</b> add past and planned stays, see days used and left, and when a day frees up. Works fully offline</li><li>Add a country to your trip from any result, and share the whole trip as text</li></ul>
+    </div>
+    <div class="tile f1 t-green">
+      <h3>Explore and saved</h3>
+      <ul><li>Every destination for your passport in one list, with filters by status and search</li><li>Bookmark trips from the result screen. A <b>Changed</b> badge appears when a data update changes the rule</li></ul>
+    </div>
+    <div class="tile f1">
+      <h3>Look and settings</h3>
+      <ul><li><b>Glass design:</b> frosted cards over a soft color glow and a floating navigation bar, in light and dark</li><li>Passport expiry date with optional <b>reminders</b> 6, 3 and 1 month before, set on your device</li><li><b>Update data</b> downloads the latest visa data with one tap</li></ul>
+    </div>
+  </div>  <div class="bento">
+    <div class="tile f3 t-accent">
+      <h2>20 languages</h2>
+      <p>English, हिन्दी, বাংলা, ગુજરાતી, ಕನ್ನಡ, മലയാളം, मराठी, ਪੰਜਾਬੀ, தமிழ், తెలుగు, اردو, العربية, 中文, 日本語, Español, Français, Português, Русский, Bahasa Indonesia, Հայերեն. Country names are translated too, so you can search in your own language. Arabic and Urdu use a right-to-left layout.</p>
+    </div>
+  </div>
+  <div class="bento">
+    <div class="tile f3">
+      <h2>How the data works</h2>
+      <ul>
+        <li><b>Built in:</b> all visa data ships inside the app, so Stamply works with no internet at all.</li>
+        <li><b>Optional update:</b> <b>Settings &rsaquo; Update data</b> downloads one static file from GitHub. No server, no account, no personal data sent.</li>
+        <li><b>Refreshed monthly:</b> the file is rebuilt on the 1st of every month from the open <a href="https://github.com/imorte/passport-index-data">Passport Index Data</a>.</li>
+      </ul>
+      <p class="note"><b>General guidance only.</b> Visa rules change often. Always confirm with the embassy or the official government website of your destination before you travel.</p>
+    </div>
+  </div>
+  <div class="bento">
+    <div class="tile f3 t-dark">
+      <h2>Private by design</h2>
+      <p>No ads, no analytics, no crash reporting and no account. Your passport, saved trips and recent checks stay on your device. The internet is used only when you tap <b>Update data</b>. Read the full <a href="privacy-stamply.html">privacy policy</a>.</p>
+    </div>
+  </div>
+  <div class="bento">
+    <div class="tile f3">
+      <h2>Download</h2>
+      <p><b>Google Play:</b> coming soon.</p>
+      <p><b>From GitHub:</b> get the signed APK from <a href="https://github.com/lumio-apps/stamply/releases/latest">Releases</a> (<code>Stamply-X.Y.Z.apk</code>) and allow "install from this source" when Android asks.</p>
+      <p class="note">Stamply is an Android app and does not update itself: Google Play updates Play installs, and GitHub installs update by installing a newer APK.</p>
+    </div>
+  </div>
+  <div class="bento">
+    <div class="tile f3">
+      <h2>App details</h2>
+      <dl class="dl">
+      <div><dt>Platform</dt><dd>Android</dd></div>
+      <div><dt>Current version</dt><dd>0.8.0</dd></div>
+      <div><dt>Price</dt><dd>Free, no ads, no in-app purchases</dd></div>
+      <div><dt>Internet</dt><dd>Not needed, only for the optional data update</dd></div>
+      <div><dt>Languages</dt><dd>20</dd></div>
+      <div><dt>Visa data</dt><dd><a href="https://github.com/imorte/passport-index-data">Passport Index Data</a> (MIT)</dd></div>
+      <div><dt>Country names</dt><dd><a href="https://cldr.unicode.org/">Unicode CLDR</a></dd></div>
+      <div><dt>License</dt><dd>MIT</dd></div>
+      <div><dt>Source code</dt><dd><a href="https://github.com/lumio-apps/stamply">github.com/lumio-apps/stamply</a></dd></div>
+      <div><dt>Privacy policy</dt><dd><a href="privacy-stamply.html">Read the privacy policy</a></dd></div>
+      </dl>
+    </div>
+  </div>
+</div>
 </main>
 
 <footer class="site-footer">
   <div class="wrap">
     <span>&copy; 2026 Lumio Apps. Free and open source.</span>
-    <nav aria-label="Footer">
+    <nav aria-label="Apps">
       <a href="index.html">All apps</a>
       <a href="calculator.html">Calculator</a>
       <a href="pockettally.html">PocketTally</a>
