@@ -12,7 +12,7 @@
   <link rel="icon" href="img/paperwise-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
   <script src="theme.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -36,102 +36,103 @@
 </header>
 
 <main id="main">
-<div class="wrap">
-  <div class="bento">
-    <section class="tile f2 t-hero home-hero">
-      <div class="pill">Free &middot; Open source &middot; No account</div>
-      <div>
-        <h1>Apps that work in airplane mode.</h1>
-        <p class="lead">Small, useful Android apps that run entirely on your phone. No ads, no tracking, nothing sent to a server.</p>
-        <div class="btns"><a class="btn light" href="#apps">See the apps</a><a class="btn ghost" href="https://github.com/lumio-apps">Source on GitHub</a></div>
-      </div>
-      <div class="lumi" id="lumi" aria-hidden="true"></div>
+  <div class="wrap">
+    <section class="hero">
+      <p class="eyebrow fade">Free &middot; Open source &middot; Android</p>
+      <h1 class="fade" style="animation-delay:.08s">Apps that mind their own business.</h1>
+      <p class="lead fade" style="animation-delay:.2s">Five small, useful apps. They have no ads, no tracking and no accounts, and they work fully offline. The code is open for anyone to read.</p>
+      <div class="btns fade" style="animation-delay:.32s"><a class="btn" href="#apps">See the apps</a><a class="btn ghost" href="https://github.com/lumio-apps">View on GitHub</a></div>
     </section>
-    <aside class="tile f1 t-dark airplane" aria-label="Airplane mode demo">
-      <label class="airplane-row" for="plane"><span>Airplane mode</span><input class="switch" type="checkbox" id="plane" checked></label>
-      <ul class="airplane-apps">
-        <li><img src="img/calculator-icon.png" alt="" width="36" height="36">Calculator<span class="ok">Works</span></li>
-        <li><img src="img/pockettally-icon.png" alt="" width="36" height="36">PocketTally<span class="ok">Works</span></li>
-        <li><img src="img/paperwise-icon.png" alt="" width="36" height="36">Paperwise<span class="ok">Works</span></li>
-        <li><img src="img/stamply-icon.png" alt="" width="36" height="36">Stamply<span class="ok">Works</span></li>
-        <li><img src="img/pow2-icon.png" alt="" width="36" height="36">Pow2<span class="ok">Works</span></li>
-      </ul>
-      <p class="airplane-note" id="plane-note" aria-live="polite">Your data never leaves your phone.</p>
-    </aside>
+    <div class="crop fade" aria-hidden="true">
+      <div class="fp"><img src="img/pockettally-home.jpg" alt="" width="194" height="400"></div>
+      <div class="fp"><img src="img/calculator-calculator.jpg" alt="" width="194" height="400"></div>
+      <div class="fp"><img src="img/paperwise-home.jpg" alt="" width="194" height="400"></div>
+    </div>
   </div>
 
-  <div class="bento">
-    <section class="tile f3 t-bold" aria-label="Our promise">
-      <p class="bold-line">No ads. No tracking. <span>Not now, not ever.</span></p>
-      <p class="bold-sub">We will never put ads or trackers in any Lumio app. Your phone, your data, full stop.</p>
+  <section class="band promise" aria-label="Our promise">
+    <div class="wrap">
+      <p>No ads. No tracking. Not now, not ever.</p>
+      <a href="privacy.html">Read the privacy policy</a>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <section class="apps" id="apps">
+      <h2>The apps</h2>
+    <article class="arow k-calc" id="calculator">
+      <div class="txt">
+        <img class="ic" src="img/calculator-icon.png" alt="" width="64" height="64">
+        <span class="tag">01 &middot; Everyday</span>
+        <h3><a href="calculator.html">Calculator</a></h3>
+        <p>Scientific mode, a unit converter, GST, EMI, SIP, a time calculator and date tools. Fast, quiet and fully offline.</p>
+        <div class="meta-row"><span>Version 1.8.0</span><span>MIT licence</span></div>
+        <a class="more" href="calculator.html" aria-label="Open Calculator">Open Calculator <span aria-hidden="true">&rarr;</span></a>
+      </div>
+      <div class="panel"><div class="deco" aria-hidden="true"><div class="ops"><div><i>+</i><i>&minus;</i><i>&times;</i><i>&divide;</i><i>=</i></div></div><span class="eq">12 &times; 7 = 84</span></div><div class="dev"><img src="img/calculator-calculator.jpg" alt="Calculator app screen" width="240" height="500" loading="lazy"></div></div>
+    </article>
+    <article class="arow k-pt rev" id="pockettally">
+      <div class="txt">
+        <img class="ic" src="img/pockettally-icon.png" alt="" width="64" height="64">
+        <span class="tag">02 &middot; Money</span>
+        <h3><a href="pockettally.html">PocketTally</a></h3>
+        <p>Every coin, counted. Wallets, budgets, subscriptions and split bills, in 20 languages.</p>
+        <div class="meta-row"><span>Version 1.9.0</span><span>GPL-3.0</span></div>
+        <a class="more" href="pockettally.html" aria-label="Open PocketTally">Open PocketTally <span aria-hidden="true">&rarr;</span></a>
+      </div>
+      <div class="panel"><div class="deco" aria-hidden="true"><div class="bars"><b></b><b></b><b></b><b></b><b></b></div></div><div class="dev"><img src="img/pockettally-home.jpg" alt="PocketTally home screen" width="240" height="500" loading="lazy"></div></div>
+    </article>
+    <article class="arow k-pw" id="paperwise">
+      <div class="txt">
+        <img class="ic" src="img/paperwise-icon.png" alt="" width="64" height="64">
+        <span class="tag">03 &middot; Documents</span>
+        <h3><a href="paperwise.html">Paperwise</a></h3>
+        <p>14 private PDF tools: merge, split, scan, compress, sign, protect and clean. Your files never leave your phone.</p>
+        <div class="meta-row"><span>Version 1.2.1</span><span>MIT licence</span></div>
+        <a class="more" href="paperwise.html" aria-label="Open Paperwise">Open Paperwise <span aria-hidden="true">&rarr;</span></a>
+      </div>
+      <div class="panel"><div class="deco" aria-hidden="true"><div class="sheet"></div><div class="sheet"></div><div class="sheet"></div></div><div class="dev"><img src="img/paperwise-home.jpg" alt="Paperwise home screen" width="240" height="500" loading="lazy"></div></div>
+    </article>
+    <article class="arow k-st rev" id="stamply">
+      <div class="txt">
+        <img class="ic" src="img/stamply-icon.png" alt="" width="64" height="64">
+        <span class="tag">04 &middot; Travel</span>
+        <h3><a href="stamply.html">Stamply</a></h3>
+        <p>Do I need a visa? Entry rules for 199 passports in 20 languages, with an offline map, trip planner and Schengen calculator.</p>
+        <div class="meta-row"><span>Version 0.13.0</span><span>MIT licence</span></div>
+        <a class="more" href="stamply.html" aria-label="Open Stamply">Open Stamply <span aria-hidden="true">&rarr;</span></a>
+      </div>
+      <div class="panel"><div class="deco" aria-hidden="true"><div class="stampr">APPROVED</div></div><div class="dev"><img src="img/stamply-check.jpg" alt="Stamply check screen" width="240" height="500" loading="lazy"></div></div>
+    </article>
+    <article class="arow k-p2" id="pow2">
+      <div class="txt">
+        <img class="ic" src="img/pow2-icon.png" alt="" width="64" height="64">
+        <span class="tag">05 &middot; Game</span>
+        <h3><a href="pow2.html">Pow2</a></h3>
+        <p>Swipe, merge, keep growing. A calm number puzzle with four modes, four board sizes and four themes.</p>
+        <div class="meta-row"><span>Version 1.6.1</span><span>MIT licence</span></div>
+        <a class="more" href="pow2.html" aria-label="Open Pow2">Open Pow2 <span aria-hidden="true">&rarr;</span></a>
+      </div>
+      <div class="panel"><div class="deco" aria-hidden="true"><div class="tiles"><b>2</b><b>4</b><b>8</b><b>16</b></div></div><div class="dev"><img src="img/pow2-game.jpg" alt="Pow2 game screen" width="240" height="500" loading="lazy"></div></div>
+    </article>
     </section>
   </div>
 
-  <div class="bento" id="apps">
-    <a class="tile f1 app-tile " href="calculator.html" aria-label="Calculator">
-      <img class="ic" src="img/calculator-icon.png" alt="" width="56" height="56">
-      <h2>Calculator</h2>
-      <p>Scientific mode, unit converter, GST, EMI, SIP and date tools, all offline.</p>
-      <p class="facts">Android &middot; v1.8.0 &middot; MIT</p>
-      <img class="phone" src="img/calculator-calculator.jpg" alt="Calculator screen" width="240" height="300" loading="lazy">
-    </a>
-    <a class="tile f1 app-tile t-blue" href="pockettally.html" aria-label="PocketTally">
-      <img class="ic" src="img/pockettally-icon.png" alt="" width="56" height="56">
-      <h2>PocketTally</h2>
-      <p>Every coin, counted. Income, expenses, budgets and split bills in 20 languages. Works fully offline.</p>
-      <p class="facts">Android &middot; v1.9.0 &middot; GPL-3.0</p>
-      <img class="phone" src="img/pockettally-home.jpg" alt="PocketTally home screen" width="240" height="300" loading="lazy">
-    </a>
-    <a class="tile f1 app-tile t-pink" href="paperwise.html" aria-label="Paperwise">
-      <img class="ic" src="img/paperwise-icon.png" alt="" width="56" height="56">
-      <h2>Paperwise</h2>
-      <p>14 private PDF tools: merge, split, scan, compress, sign, protect, clean and more. Files never leave your phone.</p>
-      <p class="facts">Android &middot; v1.2.1 &middot; MIT</p>
-      <img class="phone" src="img/paperwise-home.jpg" alt="Paperwise home screen" width="240" height="300" loading="lazy">
-    </a>
-    <a class="tile f2 app-tile wide t-orange" href="stamply.html" aria-label="Stamply">
-      <div style="flex:1 1 260px;display:flex;flex-direction:column;gap:8px">
-        <img class="ic" src="img/stamply-icon.png" alt="" width="56" height="56">
-        <h2>Stamply</h2>
-        <p>Do I need a visa? Entry rules for 199 passports in 20 languages, with an offline world map, trip planner and Schengen 90/180 calculator.</p>
-        <p class="facts">Android &middot; v0.13.0 &middot; MIT</p>
+  <section class="band facts-band" aria-label="What we collect">
+    <div class="wrap">
+      <h2>What we collect</h2>
+      <div class="facts-grid">
+        <div class="fact"><div class="n" role="img" aria-label="0"></div><div class="l">ads, ever</div></div>
+        <div class="fact"><div class="n" role="img" aria-label="0"></div><div class="l">trackers</div></div>
+        <div class="fact"><div class="n" role="img" aria-label="0"></div><div class="l">accounts to create</div></div>
       </div>
-      <img class="phone" src="img/stamply-check.jpg" alt="Stamply check screen" width="200" height="260" loading="lazy">
-    </a>
-    <a class="tile f1 app-tile t-green" href="pow2.html" aria-label="Pow2">
-      <img class="ic" src="img/pow2-icon.png" alt="" width="56" height="56">
-      <h2>Pow2</h2>
-      <p>Swipe. Merge. Keep growing. A calm number puzzle with four modes, four board sizes and four themes.</p>
-      <p class="facts">Android &middot; v1.6.1 &middot; MIT</p>
-      <img class="phone" src="img/pow2-game.jpg" alt="Pow2 game screen" width="240" height="300" loading="lazy">
-    </a>
-  </div>
-
-  <div class="bento">
-    <div class="tile f1">
-      <h3>Offline first</h3>
-      <p>Every feature works without internet. The only internet use is a button you tap yourself to check GitHub for a newer version.</p>
+      <div class="principles">
+        <div><h3>Offline first</h3><p>Every feature works without internet. The only internet use is a button you tap yourself to check GitHub for a newer version.</p></div>
+        <div><h3>No data collection</h3><p>No analytics, no accounts, no data collection. What you type stays on your device.</p></div>
+        <div><h3>Open source</h3><p>All code is public on GitHub. Anyone can read it, build it or suggest a change.</p></div>
+      </div>
     </div>
-    <div class="tile f1">
-      <h3>No ads, no tracking</h3>
-      <p>No analytics, no accounts, no data collection. What you type stays on your device.</p>
-    </div>
-    <div class="tile f1">
-      <h3>Open source</h3>
-      <p>All code is public on GitHub. Anyone can read it, build it or suggest a change.</p>
-    </div>
-  </div>
-  <script src="lumi.js" defer></script>
-  <script>
-    (function () {
-      var s = document.getElementById("plane"), n = document.getElementById("plane-note");
-      if (!s || !n) return;
-      s.addEventListener("change", function () {
-        n.textContent = s.checked ? "Your data never leaves your phone." : "Online or offline, they work the same. Nothing is sent anywhere.";
-      });
-    })();
-  </script>
-</div>
+  </section>
 </main>
 
 <footer class="site-footer">
