@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
   <title>Lumio Apps: simple, private, offline apps</title>
-  <meta name="description" content="Lumio Apps makes small Android apps that work fully offline: Calculator, PocketTally, Paperwise and Stamply. No ads, no tracking, no accounts. Free and open source.">
+  <meta name="description" content="Lumio Apps makes small Android apps that work fully offline: Calculator, PocketTally, Paperwise, Stamply and Pow2. No ads, no tracking, no accounts. Free and open source.">
   <meta property="og:title" content="Lumio Apps: simple, private, offline apps">
-  <meta property="og:description" content="Lumio Apps makes small Android apps that work fully offline: Calculator, PocketTally, Paperwise and Stamply. No ads, no tracking, no accounts. Free and open source.">
+  <meta property="og:description" content="Lumio Apps makes small Android apps that work fully offline: Calculator, PocketTally, Paperwise, Stamply and Pow2. No ads, no tracking, no accounts. Free and open source.">
   <meta property="og:image" content="https://lumio-apps.online/img/paperwise-icon.png">
   <link rel="icon" href="img/paperwise-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,6 +27,7 @@
       <a href="pockettally.html">PocketTally</a>
       <a href="paperwise.html">Paperwise</a>
       <a href="stamply.html">Stamply</a>
+      <a href="pow2.html">Pow2</a>
         <a class="gh" href="https://github.com/lumio-apps">GitHub</a>
         <button class="theme-toggle" type="button" id="theme-toggle" aria-label="Switch to light mode" title="Switch theme"><svg class="i-sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="i-moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
       </nav>
@@ -53,31 +54,39 @@
         <li><img src="img/pockettally-icon.png" alt="" width="36" height="36">PocketTally<span class="ok">Works</span></li>
         <li><img src="img/paperwise-icon.png" alt="" width="36" height="36">Paperwise<span class="ok">Works</span></li>
         <li><img src="img/stamply-icon.png" alt="" width="36" height="36">Stamply<span class="ok">Works</span></li>
+        <li><img src="img/pow2-icon.png" alt="" width="36" height="36">Pow2<span class="ok">Works</span></li>
       </ul>
       <p class="airplane-note" id="plane-note" aria-live="polite">Your data never leaves your phone.</p>
     </aside>
+  </div>
+
+  <div class="bento">
+    <section class="tile f3 t-bold" aria-label="Our promise">
+      <p class="bold-line">No ads. No tracking. <span>Not now, not ever.</span></p>
+      <p class="bold-sub">We will never put ads or trackers in any Lumio app. Your phone, your data, full stop.</p>
+    </section>
   </div>
 
   <div class="bento" id="apps">
     <a class="tile f1 app-tile " href="calculator.html" aria-label="Calculator">
       <img class="ic" src="img/calculator-icon.png" alt="" width="56" height="56">
       <h2>Calculator</h2>
-      <p>Scientific mode, an 11-category unit converter, everyday money tools and a date calculator.</p>
-      <p class="facts">Android &middot; v1.5.0 &middot; MIT</p>
+      <p>Scientific mode, unit converter, GST, EMI, SIP and date tools, all offline.</p>
+      <p class="facts">Android &middot; v1.8.0 &middot; MIT</p>
       <img class="phone" src="img/calculator-calculator.jpg" alt="Calculator screen" width="240" height="300" loading="lazy">
     </a>
     <a class="tile f1 app-tile t-blue" href="pockettally.html" aria-label="PocketTally">
       <img class="ic" src="img/pockettally-icon.png" alt="" width="56" height="56">
       <h2>PocketTally</h2>
       <p>Every coin, counted. Income, expenses, budgets and split bills in 20 languages. Works fully offline.</p>
-      <p class="facts">Android &middot; v1.5.0 &middot; GPL-3.0</p>
+      <p class="facts">Android &middot; v1.9.0 &middot; GPL-3.0</p>
       <img class="phone" src="img/pockettally-home.jpg" alt="PocketTally home screen" width="240" height="300" loading="lazy">
     </a>
     <a class="tile f1 app-tile t-pink" href="paperwise.html" aria-label="Paperwise">
       <img class="ic" src="img/paperwise-icon.png" alt="" width="56" height="56">
       <h2>Paperwise</h2>
-      <p>13 private PDF tools: merge, split, scan, compress, sign, protect and more. Files never leave your phone.</p>
-      <p class="facts">Android &middot; v1.1.5 &middot; MIT</p>
+      <p>14 private PDF tools: merge, split, scan, compress, sign, protect, clean and more. Files never leave your phone.</p>
+      <p class="facts">Android &middot; v1.2.1 &middot; MIT</p>
       <img class="phone" src="img/paperwise-home.jpg" alt="Paperwise home screen" width="240" height="300" loading="lazy">
     </a>
     <a class="tile f2 app-tile wide t-orange" href="stamply.html" aria-label="Stamply">
@@ -85,15 +94,17 @@
         <img class="ic" src="img/stamply-icon.png" alt="" width="56" height="56">
         <h2>Stamply</h2>
         <p>Do I need a visa? Entry rules for 199 passports in 20 languages, with an offline world map, trip planner and Schengen 90/180 calculator.</p>
-        <p class="facts">Android &middot; v0.12.0 &middot; MIT</p>
+        <p class="facts">Android &middot; v0.13.0 &middot; MIT</p>
       </div>
       <img class="phone" src="img/stamply-check.jpg" alt="Stamply check screen" width="200" height="260" loading="lazy">
     </a>
-    <div class="tile f1" style="display:flex;flex-direction:column;justify-content:center;gap:12px">
-      <h2>Open source</h2>
-      <p>Every line of code is public. Read it, build it, improve it.</p>
-      <div class="btns" style="margin-top:4px"><a class="btn" href="https://github.com/lumio-apps" style="background:var(--ink);color:var(--base)">View on GitHub</a></div>
-    </div>
+    <a class="tile f1 app-tile t-green" href="pow2.html" aria-label="Pow2">
+      <img class="ic" src="img/pow2-icon.png" alt="" width="56" height="56">
+      <h2>Pow2</h2>
+      <p>Swipe. Merge. Keep growing. A calm number puzzle with four modes, four board sizes and four themes.</p>
+      <p class="facts">Android &middot; v1.6.1 &middot; MIT</p>
+      <img class="phone" src="img/pow2-game.jpg" alt="Pow2 game screen" width="240" height="300" loading="lazy">
+    </a>
   </div>
 
   <div class="bento">
@@ -132,6 +143,7 @@
       <a href="pockettally.html">PocketTally</a>
       <a href="paperwise.html">Paperwise</a>
       <a href="stamply.html">Stamply</a>
+      <a href="pow2.html">Pow2</a>
       <a href="https://github.com/lumio-apps">GitHub</a>
     </nav>
     <nav class="legal" aria-label="About and legal">

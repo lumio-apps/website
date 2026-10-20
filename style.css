@@ -250,6 +250,19 @@ tr:last-child td { border-bottom: 0; }
   .site-header .bar, .bento > .tile, .prose { opacity: 1; }
 }
 
+
+/* Pow2 accent */
+body.p2 { --accent: #f5c84b; --on-accent: #2a2000; --link: #f7d874; }
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) body.p2 { --accent: #8a6200; --on-accent: #ffffff; --link: #7a5600; }
+}
+:root[data-theme="light"] body.p2 { --accent: #8a6200; --on-accent: #ffffff; --link: #7a5600; }
+
+/* Bold promise banner */
+.t-bold { box-shadow: var(--sink); text-align: center; padding: clamp(32px, 6vw, 64px) 24px; }
+.t-bold .bold-line { font-size: clamp(34px, 7vw, 84px); font-weight: 800; line-height: 1; letter-spacing: -.04em; margin: 0 0 14px; color: var(--ink); }
+.t-bold .bold-line span { color: var(--accent); text-shadow: 0 0 32px var(--glow); }
+.t-bold .bold-sub { font-size: clamp(17px, 2.2vw, 22px); margin: 0 auto; max-width: 34em; color: var(--muted); }
 /* Lumi, the floating robot in the home hero */
 .home-hero { position: relative; }
 .lumi { position: absolute; right: clamp(16px, 6%, 72px); top: 50%; width: 170px; height: 250px; margin-top: -125px; z-index: 1; pointer-events: none; }
