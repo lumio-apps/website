@@ -5,6 +5,7 @@
 :root body.pw, :root .k-pw{--accent:#ff9ec4;--tint:#ff9ec4;--glow:#ff9ec4;}
 :root body.st, :root .k-st{--accent:#ffb98a;--tint:#ffb98a;--glow:#ffb98a;}
 :root body.p2, :root .k-p2{--accent:#ffd23f;--tint:#ffe066;--glow:#ffe066;}
+:root body.cb, :root .k-cb{--accent:#ff9a8a;--tint:#ff9a8a;--glow:#ff9a8a;}
 @media (prefers-color-scheme: light){
 :root:not([data-theme="dark"]){color-scheme:light;--bg:#f5efe3;--dot:#d9d2c3;--card:#ffffff;--ink:#111111;--muted:#3d3a35;--line:#111111;--bd:#111111;--sd:#111111;--band:#111111;--band-ink:#ffffff;--band-muted:#d8d4cc;--band-line:rgba(255,255,255,.25);--code-bg:#efe8d8;--dev-bg:#111111;--dev-line:#111111;--on-accent:#ffffff;--chip-bg:#ffffff;--chip-sh:#111111;--hl:#ffd23f;--tky:#ffd23f;--tkp:#ff9ec4;--accent:#7a3cff;--tint:#b8a9ff;--glow:#b8a9ff;}
 :root:not([data-theme="dark"]) body.calc, :root:not([data-theme="dark"]) .k-calc{--accent:#7a3cff;--tint:#b8a9ff;--glow:#b8a9ff;}
@@ -12,6 +13,7 @@
 :root:not([data-theme="dark"]) body.pw, :root:not([data-theme="dark"]) .k-pw{--accent:#c2306b;--tint:#ff9ec4;--glow:#ff9ec4;}
 :root:not([data-theme="dark"]) body.st, :root:not([data-theme="dark"]) .k-st{--accent:#c2471a;--tint:#ffb98a;--glow:#ffb98a;}
 :root:not([data-theme="dark"]) body.p2, :root:not([data-theme="dark"]) .k-p2{--accent:#8a6200;--tint:#ffe066;--glow:#ffe066;}
+:root:not([data-theme="dark"]) body.cb, :root:not([data-theme="dark"]) .k-cb{--accent:#c23a2a;--tint:#ff9a8a;--glow:#ff9a8a;}
 }
 :root[data-theme="light"]{color-scheme:light;--bg:#f5efe3;--dot:#d9d2c3;--card:#ffffff;--ink:#111111;--muted:#3d3a35;--line:#111111;--bd:#111111;--sd:#111111;--band:#111111;--band-ink:#ffffff;--band-muted:#d8d4cc;--band-line:rgba(255,255,255,.25);--code-bg:#efe8d8;--dev-bg:#111111;--dev-line:#111111;--on-accent:#ffffff;--chip-bg:#ffffff;--chip-sh:#111111;--hl:#ffd23f;--tky:#ffd23f;--tkp:#ff9ec4;--accent:#7a3cff;--tint:#b8a9ff;--glow:#b8a9ff;}
 :root[data-theme="light"] body.calc, :root[data-theme="light"] .k-calc{--accent:#7a3cff;--tint:#b8a9ff;--glow:#b8a9ff;}
@@ -19,12 +21,14 @@
 :root[data-theme="light"] body.pw, :root[data-theme="light"] .k-pw{--accent:#c2306b;--tint:#ff9ec4;--glow:#ff9ec4;}
 :root[data-theme="light"] body.st, :root[data-theme="light"] .k-st{--accent:#c2471a;--tint:#ffb98a;--glow:#ffb98a;}
 :root[data-theme="light"] body.p2, :root[data-theme="light"] .k-p2{--accent:#8a6200;--tint:#ffe066;--glow:#ffe066;}
+:root[data-theme="light"] body.cb, :root[data-theme="light"] .k-cb{--accent:#c23a2a;--tint:#ff9a8a;--glow:#ff9a8a;}
 :root[data-theme="dark"]{color-scheme:dark;--bg:#15131a;--dot:#25222e;--card:#201d29;--ink:#f5efe3;--muted:#cfc8ba;--line:#f5efe3;--bd:#f5efe3;--sd:#f5efe3;--band:#f5efe3;--band-ink:#111111;--band-muted:#3d3a35;--band-line:rgba(0,0,0,.25);--code-bg:#2d2938;--dev-bg:#0b0a0f;--dev-line:#f5efe3;--on-accent:#111111;--chip-bg:#201d29;--chip-sh:#f5efe3;--hl:#7a3cff;--tky:#b87900;--tkp:#d6336c;--accent:#b79cff;--tint:#b8a9ff;--glow:#b8a9ff;}
 :root[data-theme="dark"] body.calc, :root[data-theme="dark"] .k-calc{--accent:#b79cff;--tint:#b8a9ff;--glow:#b8a9ff;}
 :root[data-theme="dark"] body.pt, :root[data-theme="dark"] .k-pt{--accent:#8fc1ff;--tint:#8fc1ff;--glow:#8fc1ff;}
 :root[data-theme="dark"] body.pw, :root[data-theme="dark"] .k-pw{--accent:#ff9ec4;--tint:#ff9ec4;--glow:#ff9ec4;}
 :root[data-theme="dark"] body.st, :root[data-theme="dark"] .k-st{--accent:#ffb98a;--tint:#ffb98a;--glow:#ffb98a;}
 :root[data-theme="dark"] body.p2, :root[data-theme="dark"] .k-p2{--accent:#ffd23f;--tint:#ffe066;--glow:#ffe066;}
+:root[data-theme="dark"] body.cb, :root[data-theme="dark"] .k-cb{--accent:#ff9a8a;--tint:#ff9a8a;--glow:#ff9a8a;}
 @media (prefers-color-scheme: light){:root:not([data-theme="dark"]) .i-sun{display:none}:root:not([data-theme="dark"]) .i-moon{display:block}}
 :root[data-theme="light"] .i-sun{display:none}:root[data-theme="light"] .i-moon{display:block}
 :root[data-theme="dark"] .i-sun{display:block}:root[data-theme="dark"] .i-moon{display:none}
@@ -397,3 +401,24 @@ table { border: 3px solid var(--bd); }
 main { overflow-x: clip; }
 .tile p.note, .tile .note, .prose .callout, .prose .callout p { color: #111; } .tile .note b { color: #111; }
 .tile.prose { box-shadow: none; border: 0; }
+
+/* category filter */
+.shell input { position: absolute; opacity: 0; pointer-events: none; }
+.hint { font-size: 18px; margin: -14px 0 26px; color: var(--muted); }
+.bar { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 34px; }
+.chip { display: inline-flex; align-items: center; gap: 10px; cursor: pointer; background: var(--card); color: var(--ink); border: 3px solid var(--bd); border-radius: 99px; padding: 10px 20px; font-weight: 700; font-size: 19px; box-shadow: 4px 4px 0 var(--sd); transition: transform .18s cubic-bezier(.3,1.6,.5,1), box-shadow .18s ease, background .15s; }
+.chip:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--sd); }
+.chip:active { transform: translate(3px, 3px); box-shadow: 1px 1px 0 var(--sd); }
+.chip em { font-style: normal; font-size: 14px; background: var(--ink); color: var(--bg); border-radius: 99px; min-width: 24px; height: 24px; display: inline-flex; align-items: center; justify-content: center; padding: 0 6px; }
+.shell:has(#f-all:checked) label[for=f-all], .shell:has(#f-everyday:checked) label[for=f-everyday], .shell:has(#f-money:checked) label[for=f-money], .shell:has(#f-docs:checked) label[for=f-docs], .shell:has(#f-travel:checked) label[for=f-travel], .shell:has(#f-games:checked) label[for=f-games] { background: #ffd23f; color: #111; }
+.shell:has(#f-all:checked) label[for=f-all] em, .shell:has(#f-everyday:checked) label[for=f-everyday] em, .shell:has(#f-money:checked) label[for=f-money] em, .shell:has(#f-docs:checked) label[for=f-docs] em, .shell:has(#f-travel:checked) label[for=f-travel] em, .shell:has(#f-games:checked) label[for=f-games] em { background: #111; color: #fff; }
+.shell input:focus-visible ~ .bar label { }
+.shell:has(#f-all:focus-visible) label[for=f-all], .shell:has(#f-everyday:focus-visible) label[for=f-everyday], .shell:has(#f-money:focus-visible) label[for=f-money], .shell:has(#f-docs:focus-visible) label[for=f-docs], .shell:has(#f-travel:focus-visible) label[for=f-travel], .shell:has(#f-games:focus-visible) label[for=f-games] { outline: 4px solid #7a3cff; outline-offset: 4px; }
+.shell:has(#f-everyday:checked) .card:not(.c-everyday), .shell:has(#f-money:checked) .card:not(.c-money), .shell:has(#f-docs:checked) .card:not(.c-docs), .shell:has(#f-travel:checked) .card:not(.c-travel), .shell:has(#f-games:checked) .card:not(.c-games) { display: none; }
+.card { animation: pophere .45s cubic-bezier(.3,1.5,.5,1) both; }
+@keyframes pophere { from { opacity: 0; transform: scale(.85) rotate(-3deg); } to { opacity: 1; transform: none; } }
+.cat { align-self: flex-start; font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #111; background: #fff; border: 3px solid #111; border-radius: 99px; padding: 2px 12px; }
+.card.dark .cat { display: none; }
+.blk { position: absolute; width: 34px; height: 34px; border: 3px solid #111; border-radius: 9px; animation: drop 2.8s cubic-bezier(.5,0,.8,.4) infinite; }
+@keyframes drop { 0% { transform: translateY(-70px); opacity: 0; } 15% { opacity: 1; } 45%, 80% { transform: translateY(0); opacity: 1; } 100% { transform: translateY(0); opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .blk, .card { animation: none; } }
