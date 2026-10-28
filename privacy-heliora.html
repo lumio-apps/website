@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap">
   <script src="theme.js"></script>
-  <link rel="stylesheet" href="style.css?v=20261028a">
+  <link rel="stylesheet" href="style.css?v=20261029a">
 </head>
 <body class="he">
 <a class="skip" href="#main">Skip to content</a>
@@ -48,7 +48,7 @@
       
       <p class="meta">Last updated: 23 October 2026<br>Developer: Lumio Apps<br>Source code: <a href="https://github.com/lumio-apps/heliora">github.com/lumio-apps/heliora</a></p>
 
-      <div class="callout"><b>In short:</b> Heliora works offline and collects nothing. Your birth date and settings stay on your phone. The internet is used only to look for and download updates.</div>
+      <div class="callout"><b>In short:</b> Heliora works offline first and collects nothing. Your birth date, city and settings stay on your phone. Two optional online features are off until you switch them on.</div>
 
       <h2>Data we collect</h2>
       <p><b>None.</b> Heliora does not collect, store on a server, transmit, share or sell any personal or usage data. Lumio Apps runs no servers for this app.</p>
@@ -60,18 +60,20 @@
       </ul>
 
       <h2>Data stored on your device</h2>
-      <p>Your birth date (used only for your age on other planets), your best quiz score and your settings (theme, language and the daily update check) are stored only on your device. Nothing is sent anywhere. Uninstalling the app removes this data.</p>
+      <p>Your birth date (used only for your age on other planets), your chosen city (used only for tonight's sky), your event reminders, your best quiz score and your settings (theme, language, the daily update check and Online features) are stored only on your device. Nothing is sent anywhere. Uninstalling the app removes this data.</p>
       <p>This data never leaves your device through Heliora. Uninstalling the app removes it.</p>
 
       <h2>Internet access</h2>
-      <p>Planet data, positions and 3D surfaces are all worked out on your phone. Heliora is shared only on <b>GitHub</b>, on purpose. The only network use is the update check: Heliora asks the public GitHub API whether a newer version exists. This happens once a day, and you can turn it off in Settings. You can also tap <b>Check for updates</b> yourself. The new APK is downloaded from GitHub only when you tap <b>Download and install</b>. No personal data is sent. GitHub sees the request like any web request (for example your IP address). GitHub's own privacy statement applies to these requests: <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a>.</p>
+      <p>Planet data, positions, tonight's sky and the 3D surfaces are all worked out on your phone. You pick your city from a list, so Heliora never asks for your location. The compass finder uses only the phone's motion sensors: no camera and no location.</p><p>Heliora is shared only on <b>GitHub</b>, on purpose. The internet is used in these cases:</p><ul><li><b>Updates:</b> once a day Heliora asks the public GitHub API whether a newer version exists. You can turn this off in Settings, or tap <b>Check for updates</b> yourself. The new APK is downloaded from GitHub only when you tap <b>Download and install</b>.</li><li><b>Online features (off by default):</b> if you switch them on in Settings, Heliora contacts <code>api.wheretheiss.at</code> (or <code>celestrak.org</code>) for the space station's orbit data and <code>ll.thespacedevs.com</code> (Launch Library 2) for the rocket launch list. Nothing about you is sent. Those services can only see your phone's internet address, like any website. The orbit data is saved on the phone, so the station keeps working offline for days. Switch the setting off and Heliora never contacts them.</li></ul><p>GitHub sees update requests like any web request (for example your IP address). GitHub's own privacy statement applies to these requests: <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a>.</p>
 
       <h2>Permissions</h2>
       <div class="table-wrap">
         <table>
           <thead><tr><th>Permission</th><th>Which version</th><th>Why</th></tr></thead>
-          <tr><td><b>Internet</b></td><td>All versions</td><td>Look for and download new versions from GitHub</td></tr>
+          <tr><td><b>Internet</b></td><td>All versions</td><td>Look for and download new versions from GitHub, and the optional online features</td></tr>
           <tr><td><b>Install packages</b></td><td>All versions</td><td>Install a downloaded update after you confirm</td></tr>
+          <tr><td><b>Notifications</b></td><td>All versions</td><td>Show the space event reminders you set. They are planned and shown on your phone</td></tr>
+          <tr><td><b>Receive boot completed</b></td><td>All versions</td><td>Plan your event reminders again after the phone restarts</td></tr>
         </table>
       </div>
 

@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap">
   <script src="theme.js"></script>
-  <link rel="stylesheet" href="style.css?v=20261028a">
+  <link rel="stylesheet" href="style.css?v=20261029a">
 </head>
 <body class="sm">
 <a class="skip" href="#main">Skip to content</a>
@@ -70,7 +70,7 @@
       <div class="table-wrap">
         <table>
           <thead><tr><th>Permission</th><th>Which version</th><th>Why</th></tr></thead>
-          <tr><td><b>Foreground service, special use</b></td><td>All versions</td><td>Keep the screen-event listener running. It only notes when the screen turns off and when you unlock</td></tr>
+          <tr><td><b>Foreground service, special use</b></td><td>All versions</td><td>Keep the screen-event listener running. With Usage access on, no background service runs at all. Without it, the tracker runs only inside your sleep window</td></tr>
           <tr><td><b>Usage access (optional)</b></td><td>You grant it</td><td>Read screen-off and unlock times from Android's own history, so sleep is found even if the phone stops the tracker at night. Only these two kinds of event are read, never which apps you use</td></tr>
           <tr><td><b>Receive boot completed</b></td><td>All versions</td><td>Start tracking again after the phone restarts</td></tr>
           <tr><td><b>Notifications</b></td><td>All versions</td><td>Show the tracking notice and the optional bedtime reminder</td></tr>

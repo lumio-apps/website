@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap">
   <script src="theme.js"></script>
-  <link rel="stylesheet" href="style.css?v=20261028a">
+  <link rel="stylesheet" href="style.css?v=20261029a">
 </head>
 <body class="he">
 <a class="skip" href="#main">Skip to content</a>
@@ -47,7 +47,7 @@
       <img class="icon" src="img/heliora-icon.png" alt="" width="88" height="88">
       <div>
         <h1>Heliora</h1>
-        <p class="lead">Explore the Solar System, fully offline. Real planet positions, rotating 3D worlds, atmospheres and oxygen, and an honest answer to "could humans live here?"</p>
+        <p class="lead">Explore the Solar System, offline first. Real planet positions, rotating 3D worlds, atmospheres and oxygen, tonight's sky from your city and an honest answer to "could humans live here?"</p>
         <p class="platforms">Android &middot; 20 languages &middot; Works offline &middot; GitHub only</p>
         <div class="btns">
           <a class="btn light" href="https://github.com/lumio-apps/heliora/releases/latest">Download APK</a>
@@ -72,7 +72,9 @@
         <figure><img src="img/heliora-settings.jpg" alt="Settings with theme, language and updates" width="200" height="360" loading="lazy"><figcaption>Settings</figcaption></figure>
       </div>
     </section>
-  </div>  <h2 style="margin:40px 8px 0;font-size:clamp(28px,4vw,40px)">Why Heliora</h2>  <div class="bento">
+  </div>
+  <p class="measure" style="margin:12px 8px 0;color:var(--muted)">Screenshots may show an older look. Newer versions add the Sky tab, space events and the compass finder.</p>
+  <h2 style="margin:40px 8px 0;font-size:clamp(28px,4vw,40px)">Why Heliora</h2>  <div class="bento">
     <div class="tile f1 t-orange">
       <h3>Real positions</h3>
       <p>Every planet sits where it really is around the Sun, for any date from 1800 to 2050, worked out on your phone.</p>
@@ -100,10 +102,18 @@
       <ul><li><b>Planet facts:</b> diameter, gravity, temperature, length of day and year, known moons, distance from the Sun and surface pressure</li><li><b>Atmosphere and oxygen:</b> what each atmosphere is made of and how its oxygen compares with Earth's</li><li><b>Could humans live here?</b> A simple 0 to 10 life score for every world. Earth scores 10, Mars 4, Jupiter 0</li><li><b>How far is it?</b> Today's real distance from Earth, and how long light, a spacecraft or a car would need</li><li><b>Compare</b> any two worlds side by side, with their true sizes drawn next to each other</li></ul>
     </div>
     <div class="tile f1 t-pink">
+      <h3>Tonight's sky</h3>
+      <ul><li><b>Which planets can I see tonight?</b> Pick your city (no location permission) and see which planets are up after dark, the best time to look, the direction and how high, plus rise and set times</li><li><b>The Moon tonight:</b> phase, how much is lit, moonrise and moonset, and the next full and new moon</li><li><b>Sunset and sunrise</b> for your city</li><li><b>Space events</b> for the next 12 months: moon phases, oppositions, planet meetings, equinoxes, solstices and meteor showers. Tap the bell and Heliora reminds you the evening before, made on your phone</li><li><b>Find it with your compass:</b> hold your phone up and Heliora shows which way to turn and tilt to point at the Moon or a planet. Motion sensors only: no camera, no location</li></ul>
+    </div>
+    <div class="tile f1 t-orange">
+      <h3>Optional online features</h3>
+      <ul><li><b>Off by default.</b> Turn on <b>Online features</b> in Settings to see where the International Space Station is right now on a map, when it passes over your city and whether you can see it</li><li>The list of <b>upcoming rocket launches</b> in the events calendar, with reminders</li><li>The station's orbit data is saved on the phone, so it keeps working offline for days. Switch the setting off and Heliora never contacts these services</li></ul>
+    </div>
+    <div class="tile f1 t-green">
       <h3>You</h3>
       <ul><li><b>Your weight</b> on every world, from the Moon to the Sun</li><li><b>Your age on other planets</b> and the date of your next birthday there</li><li><b>Quiz:</b> 10 questions built from the planet data, with your best score saved</li><li><b>Share</b> a planet's card as a picture and send it to your friends</li></ul>
     </div>
-    <div class="tile f1 t-orange">
+    <div class="tile f1">
       <h3>Made for everyone</h3>
       <ul><li>Light, dark or system theme</li><li><b>20 languages,</b> with translated planet names. Arabic and Urdu read right to left</li><li><b>In-app updates:</b> new versions download inside the app with a progress bar, then the Android installer opens. Your settings are kept</li></ul>
     </div>
@@ -114,13 +124,14 @@
         <li><b>Planet facts:</b> <a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/">NASA Planetary Fact Sheet</a>.</li>
         <li><b>Positions and distances:</b> Keplerian orbital elements from JPL (Standish), valid 1800 to 2050 and solved on the phone.</li>
         <li><b>Life score:</b> six simple rules. It is a teaching aid, not science.</li>
+        <li><b>Space station:</b> orbit data downloaded once, the position is worked out on the phone. <b>Rocket launches:</b> from <a href="https://thespacedevs.com/llapi">Launch Library 2</a>.</li>
       </ul>
     </div>
   </div>
   <div class="bento">
     <div class="tile f3 t-dark">
       <h2>Private by design</h2>
-      <p>No ads, no account and no tracking. Planet data, positions and 3D surfaces are all worked out on your phone. Your birth date and settings stay on your device. The internet is used only for updates: Heliora looks for a new version on GitHub once a day, which you can switch off in Settings, and downloads one only when you tap Download and install. Nothing about you is sent. Read the full <a href="privacy-heliora.html">privacy policy</a>.</p>
+      <p>No ads, no account and no tracking. Planet data, positions and 3D surfaces are all worked out on your phone. Your birth date, chosen city and settings stay on your device. Online features are off until you switch them on. Besides that, the internet is used only for updates: Heliora looks for a new version on GitHub once a day, which you can switch off in Settings, and downloads one only when you tap Download and install. Nothing about you is sent. Read the full <a href="privacy-heliora.html">privacy policy</a>.</p>
     </div>
   </div>
   <div class="bento">
@@ -139,10 +150,10 @@
       <h2>App details</h2>
       <dl class="dl">
       <div><dt>Platform</dt><dd>Android</dd></div>
-      <div><dt>Current version</dt><dd>1.4.0</dd></div>
+      <div><dt>Current version</dt><dd>1.8.0</dd></div>
       <div><dt>Price</dt><dd>Free, no ads, no in-app purchases</dd></div>
       <div><dt>Languages</dt><dd>20</dd></div>
-      <div><dt>Internet</dt><dd>Not needed. Only to look for and download new versions</dd></div>
+      <div><dt>Internet</dt><dd>Not needed. Only for updates and the optional online features, which are off by default</dd></div>
       <div><dt>License</dt><dd>MIT</dd></div>
       <div><dt>Source code</dt><dd><a href="https://github.com/lumio-apps/heliora">github.com/lumio-apps/heliora</a></dd></div>
       <div><dt>Privacy policy</dt><dd><a href="privacy-heliora.html">Read the privacy policy</a></dd></div>

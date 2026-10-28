@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap">
   <script src="theme.js"></script>
-  <link rel="stylesheet" href="style.css?v=20261028a">
+  <link rel="stylesheet" href="style.css?v=20261029a">
 </head>
 <body class="st">
 <a class="skip" href="#main">Skip to content</a>
@@ -64,13 +64,13 @@
       <p>This data never leaves your device through Stamply. Uninstalling the app removes it.</p>
 
       <h2>Internet access</h2>
-      <p>Stamply works fully offline. Visa data is built into the app.</p><p>Stamply is shared only on <b>GitHub</b>, on purpose. The app connects to the internet only when you tap a button:</p><ul><li><b>Update data</b> downloads the latest public visa data file from GitHub. Nothing about you or your checks is sent.</li><li><b>Check for updates</b> asks the public GitHub API whether a newer app version exists and, if you agree, downloads it from GitHub. No personal data is sent.</li></ul><p>GitHub's own privacy statement applies to these requests: <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a>.</p>
+      <p>Stamply works fully offline. Visa data is built into the app.</p><p>Stamply is shared only on <b>GitHub</b>, on purpose. The app connects to the internet only in these cases:</p><ul><li><b>Update data</b> downloads the latest public visa data file from GitHub when you tap it. Nothing about you or your checks is sent.</li><li><b>Automatic data check</b> is optional and off by default. If you turn it on, the app looks for new visa data on GitHub when it opens, at most once a day.</li><li><b>Exchange rate:</b> when you tap Refresh, the app downloads the public currency rates file (from cdn.jsdelivr.net or currency-api.pages.dev). It is a plain file with no personal data. The last rate is kept on your phone with its date.</li><li><b>Official website link:</b> opens a hand-checked government page in your browser, only after you confirm. The links are built into the app.</li><li><b>Check for updates</b> asks the public GitHub API whether a newer app version exists and, if you agree, downloads it from GitHub. No personal data is sent.</li></ul><p>GitHub's own privacy statement applies to these requests: <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a>.</p>
 
       <h2>Permissions</h2>
       <div class="table-wrap">
         <table>
           <thead><tr><th>Permission</th><th>Which version</th><th>Why</th></tr></thead>
-          <tr><td><b>Internet</b></td><td>All versions</td><td>Download the visa data file or look for a newer app version, only when you tap the button</td></tr>
+          <tr><td><b>Internet</b></td><td>All versions</td><td>Download the visa data file, exchange rates or a newer app version, when you tap the button (or if you turn on the optional automatic data check)</td></tr>
           <tr><td><b>Install packages</b></td><td>All versions</td><td>Install a downloaded app update after you confirm</td></tr>
           <tr><td><b>Notifications</b></td><td>All versions</td><td>Only if you turn on the passport expiry reminder. Reminders are scheduled on your device; nothing is sent to a server</td></tr>
           <tr><td><b>Receive boot completed</b></td><td>All versions</td><td>Re-schedule your reminders after the phone restarts</td></tr>
