@@ -5,16 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
   <title>Paperwise by Lumio Apps</title>
-  <meta name="description" content="Paperwise is a private PDF toolkit for Android that works fully offline: merge, split, scan, compress, sign, protect and search PDFs. No ads, no tracking, files never uploaded.">
+  <meta name="description" content="Paperwise is a private PDF toolkit for Android that works fully offline: merge, split, scan, compress, sign, protect and search PDFs, and view Excel and Word files. No ads, no tracking, files never uploaded.">
   <meta property="og:title" content="Paperwise by Lumio Apps">
-  <meta property="og:description" content="Paperwise is a private PDF toolkit for Android that works fully offline: merge, split, scan, compress, sign, protect and search PDFs. No ads, no tracking, files never uploaded.">
+  <meta property="og:description" content="Paperwise is a private PDF toolkit for Android that works fully offline: merge, split, scan, compress, sign, protect and search PDFs, and view Excel and Word files. No ads, no tracking, files never uploaded.">
   <meta property="og:image" content="https://lumio-apps.online/img/paperwise-icon.png">
   <link rel="icon" href="img/paperwise-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap">
   <script src="theme.js"></script>
-  <link rel="stylesheet" href="style.css?v=20261023a">
+  <link rel="stylesheet" href="style.css?v=20261028a">
 </head>
 <body class="pw">
 <a class="skip" href="#main">Skip to content</a>
@@ -29,6 +29,10 @@
       <a href="stamply.html">Stamply</a>
       <a href="pow2.html">Pow2</a>
       <a href="cuboo.html">Cuboo</a>
+      <a href="verto.html">Verto</a>
+      <a href="somno.html">Somno</a>
+      <a href="anatomo.html">Anatomo</a>
+      <a href="heliora.html">Heliora</a>
         <a class="gh" href="https://github.com/lumio-apps">GitHub</a>
         <button class="theme-toggle" type="button" id="theme-toggle" aria-label="Switch to light mode" title="Switch theme"><svg class="i-sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="i-moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
       </nav>
@@ -43,7 +47,7 @@
       <img class="icon" src="img/paperwise-icon.png" alt="" width="88" height="88">
       <div>
         <h1>Paperwise</h1>
-        <p class="lead">Private PDF tools for Android, fully offline. Merge, split, sign, scan, compress, protect and search PDFs, all on your phone. Your files are never uploaded.</p>
+        <p class="lead">Private PDF tools for Android, fully offline. Merge, split, sign, scan, compress, protect and search PDFs, and read Excel and Word files, all on your phone. Your files are never uploaded.</p>
         <p class="platforms">Android 7.0 or newer &middot; Free &middot; GitHub only</p>
         <div class="btns">
           <a class="btn light" href="https://github.com/lumio-apps/paperwise/releases/latest">Download APK</a>
@@ -72,7 +76,7 @@
       <h2>Why Paperwise</h2>
       <p>Most PDF apps upload your files, show ads or ask you to sign in. Paperwise does none of that. Every tool runs on your phone, and your files are never uploaded. The only internet use is a button you tap to check for a new version. The code is open, so you can check that yourself.</p>
     </div>
-  </div>  <h2 style="margin:40px 8px 0;font-size:clamp(28px,4vw,40px)">17 tools</h2>  <div class="bento" aria-label="Features">
+  </div>  <h2 style="margin:40px 8px 0;font-size:clamp(28px,4vw,40px)">19 tools</h2>  <div class="bento" aria-label="Features">
     <div class="tile f1">
       <h3>Merge PDF</h3>
       <p>Join PDFs into one and drag them into the order you want.</p>
@@ -130,14 +134,22 @@
       <p>Find words inside a PDF and jump between matches.</p>
     </div>
     <div class="tile f1 t-green">
+      <h3>Excel viewer</h3>
+      <p>Open .xlsx and .csv files as a table with a tab for each sheet. Tap a cell to see or copy it. View only.</p>
+    </div>
+    <div class="tile f1">
+      <h3>Word viewer</h3>
+      <p>Read .docx documents with headings, lists, tables and pictures. Make text bigger and copy it. View only.</p>
+    </div>
+    <div class="tile f1 t-blue">
       <h3>Images from PDF</h3>
       <p>Save the photos stored inside a PDF as separate JPG or PNG files.</p>
     </div>
-    <div class="tile f1">
+    <div class="tile f1 t-pink">
       <h3>PDF info</h3>
       <p>See the author, software and dates inside a PDF and save a clean copy without them.</p>
     </div>
-    <div class="tile f1 t-blue">
+    <div class="tile f1 t-orange">
       <h3>Image privacy</h3>
       <p>Remove hidden location and device info from photos, blur faces or number plates.</p>
     </div>
@@ -145,11 +157,11 @@
   <div class="bento" aria-label="Features">
     <div class="tile f1">
       <h3>Also built in</h3>
-      <ul><li>A PDF reader with zoom, page jump, thumbnails, Continue reading, favorites and a night reading mode</li><li>Open PDFs from your file manager, chat apps or email with <b>Open with Paperwise</b>, or send PDFs and pictures from any app's <b>Share</b> menu</li><li><b>Save location:</b> pick a folder in Settings and every new PDF or picture is also copied there. You can change or stop it at any time</li><li>Search and sort your files by newest, oldest, name or size</li><li>A clean, flat list look in light, dark or system mode, in English and Hindi (हिन्दी). No heavy shadows or animations, so it stays smooth on older phones</li><li>Backup and restore in one <code>.pwbackup</code> file you place yourself</li></ul>
+      <ul><li>A PDF reader with zoom, page jump, thumbnails, Continue reading, favorites and a night reading mode</li><li>Open PDFs, Excel sheets and Word files from your file manager, chat apps or email with <b>Open with Paperwise</b>, or send them and pictures from any app's <b>Share</b> menu</li><li><b>Save location:</b> pick a folder in Settings and every new PDF or picture is also copied there. You can change or stop it at any time</li><li>Search and sort your files by newest, oldest, name or size</li><li>A clean, flat list look in light, dark or system mode, in English and Hindi (हिन्दी). No heavy shadows or animations, so it stays smooth on older phones</li><li>Backup and restore in one <code>.pwbackup</code> file you place yourself</li></ul>
     </div>
     <div class="tile f1 t-blue">
       <h3>Good to know</h3>
-      <ul><li>Your original files are never changed. Every tool saves a new copy.</li><li><b>PDF info</b> makes a clean copy by rebuilding the PDF page by page. The text stays selectable, but bookmarks, links and form fields are not kept.</li><li><b>Text from scans</b> reads English text and adds the words invisibly behind your scan, so it becomes searchable.</li><li><b>Lock, Watermark and Compress</b> redraw each page as a picture, so text in those copies can't be selected.</li><li>Text you add with <b>Edit and sign</b> supports letters, numbers and keyboard symbols. Hindi covers the main screens.</li><li><b>Save location</b> needs a folder you pick yourself. On newer Android the main Downloads folder cannot be picked, so make a folder inside it, for example <code>Downloads/Paperwise</code>.</li></ul>
+      <ul><li>Your original files are never changed. Every tool saves a new copy.</li><li><b>PDF info</b> makes a clean copy by rebuilding the PDF page by page. The text stays selectable, but bookmarks, links and form fields are not kept.</li><li><b>Text from scans</b> reads English text and adds the words invisibly behind your scan, so it becomes searchable.</li><li><b>Lock, Watermark and Compress</b> redraw each page as a picture, so text in those copies can't be selected.</li><li>Text you add with <b>Edit and sign</b> supports letters, numbers and keyboard symbols. Hindi covers the main screens.</li><li><b>Excel viewer</b> shows values as they were last saved. Formulas are not worked out again, and charts, pictures, colors and merged cells are not shown. Very large sheets show the first 20,000 rows and 200 columns. Old .xls files and password-locked files cannot be opened.</li><li><b>Word viewer</b> shows the text and layout of a document, not its exact pages. Headers, footers, footnotes, comments and page numbers are not shown. Old .doc files and password-locked files cannot be opened.</li><li><b>Save location</b> needs a folder you pick yourself. On newer Android the main Downloads folder cannot be picked, so make a folder inside it, for example <code>Downloads/Paperwise</code>.</li></ul>
     </div>
   </div>
   <div class="bento">
@@ -170,7 +182,7 @@
       <h2>App details</h2>
       <dl class="dl">
       <div><dt>Platform</dt><dd>Android 7.0 or newer</dd></div>
-      <div><dt>Current version</dt><dd>1.7.0</dd></div>
+      <div><dt>Current version</dt><dd>1.9.0</dd></div>
       <div><dt>Price</dt><dd>Free, no ads, no in-app purchases</dd></div>
       <div><dt>Internet</dt><dd>Not needed. Only for the Check for updates button, when you tap it</dd></div>
       <div><dt>License</dt><dd>MIT</dd></div>
@@ -194,6 +206,10 @@
       <a href="stamply.html">Stamply</a>
       <a href="pow2.html">Pow2</a>
       <a href="cuboo.html">Cuboo</a>
+      <a href="verto.html">Verto</a>
+      <a href="somno.html">Somno</a>
+      <a href="anatomo.html">Anatomo</a>
+      <a href="heliora.html">Heliora</a>
       <a href="https://github.com/lumio-apps">GitHub</a>
     </nav>
     <nav class="legal" aria-label="About and legal">
