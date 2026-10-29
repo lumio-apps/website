@@ -561,6 +561,11 @@ main { overflow-x: clip; }
 .hx-oi { width: 56px; height: 56px; left: -28px; top: -28px; }
 @media (max-width: 560px) { .hx-hero { padding: 28px 16px 24px; } .hx-orbit { height: 340px; --ro: 140px; --ri: 86px; } .hx-r1 { width: 280px; height: 280px; margin: -140px 0 0 -140px; } .hx-r2 { width: 172px; height: 172px; margin: -86px 0 0 -86px; } .hx-oi { width: 46px; height: 46px; left: -23px; top: -23px; } }
 
+.hx-hello { margin: 80px 0 20px; text-align: left; }
+.hx-hello h2 { margin: 0 0 10px; font-size: clamp(36px, 5vw, 64px); letter-spacing: -.035em; }
+.hx-hello p { margin: 0 0 22px; font-size: 19px; color: var(--muted); }
+.hx-hello .btns { display: flex; flex-wrap: wrap; gap: 12px; }
+
 /* canvas skin */
 :root{--dot:transparent;--bd:#2b2740;--line:#2b2740;--bg:#0c0b13;--card:#15131f;--ink:#f4f1ea;--muted:#bdb8cb;--band:#f4f1ea;--band-ink:#14121b;--band-muted:#4a4658;--band-line:rgba(0,0,0,.18);--hl:#b7a6ff;--code-bg:#211e33}
 @media (prefers-color-scheme: light){:root:not([data-theme="dark"]){--bd:#ddd5c6;--line:#ddd5c6;--bg:#f6f2ea;--card:#fff;--ink:#14121b;--muted:#4a4658;--band:#14121b;--band-ink:#f4f1ea;--band-muted:#bdb8cb;--band-line:rgba(255,255,255,.2);--hl:#5b3fd1;--code-bg:#efe8d8}}
