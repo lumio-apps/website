@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap">
   <script src="theme.js"></script>
-  <link rel="stylesheet" href="style.css?v=20261029a">
+  <link rel="stylesheet" href="style.css?v=20261029b">
 </head>
 <body class="home">
 <a class="skip" href="#main">Skip to content</a>
@@ -41,114 +41,170 @@
 </header>
 
 <main id="main">
+  <div class="hx">
+  <section class="hx-hero">
+    <div class="hx-copy">
+      <p class="hx-pill rise"><i></i>Ten free Android apps. Open source.</p>
+      <h1 class="rise">Apps that mind their <span class="hx-hl">own business.</span></h1>
+      <p class="hx-lead rise">Small apps that live on your phone, work offline first and never ask who you are. No ads. No tracking. No accounts. Not now, not ever.</p>
+      <div class="btns rise"><a class="btn pri" href="#apps">Browse the apps</a><a class="btn ghost" href="https://github.com/lumio-apps">Source on GitHub</a></div>
+    </div>
+    <div class="hx-orbit" aria-hidden="true">
+      <div class="hx-ring hx-r1"><div class="hx-slot" style="transform:rotate(0deg) translateX(var(--ro)) rotate(0deg)"><img class="hx-oi" src="img/calculator-icon.png" alt="" width="64" height="64"></div><div class="hx-slot" style="transform:rotate(60deg) translateX(var(--ro)) rotate(-60deg)"><img class="hx-oi" src="img/pockettally-icon.png" alt="" width="64" height="64"></div><div class="hx-slot" style="transform:rotate(120deg) translateX(var(--ro)) rotate(-120deg)"><img class="hx-oi" src="img/paperwise-icon.png" alt="" width="64" height="64"></div><div class="hx-slot" style="transform:rotate(180deg) translateX(var(--ro)) rotate(-180deg)"><img class="hx-oi" src="img/stamply-icon.png" alt="" width="64" height="64"></div><div class="hx-slot" style="transform:rotate(240deg) translateX(var(--ro)) rotate(-240deg)"><img class="hx-oi" src="img/verto-icon.png" alt="" width="64" height="64"></div><div class="hx-slot" style="transform:rotate(300deg) translateX(var(--ro)) rotate(-300deg)"><img class="hx-oi" src="img/somno-icon.png" alt="" width="64" height="64"></div></div>
+      <div class="hx-ring hx-r2"><div class="hx-slot" style="transform:rotate(45deg) translateX(var(--ri)) rotate(-45deg)"><img class="hx-oi rv" src="img/pow2-icon.png" alt="" width="64" height="64"></div><div class="hx-slot" style="transform:rotate(135deg) translateX(var(--ri)) rotate(-135deg)"><img class="hx-oi rv" src="img/cuboo-icon.png" alt="" width="64" height="64"></div><div class="hx-slot" style="transform:rotate(225deg) translateX(var(--ri)) rotate(-225deg)"><img class="hx-oi rv" src="img/anatomo-icon.png" alt="" width="64" height="64"></div><div class="hx-slot" style="transform:rotate(315deg) translateX(var(--ri)) rotate(-315deg)"><img class="hx-oi rv" src="img/heliora-icon.png" alt="" width="64" height="64"></div></div>
+      <div class="hx-core"><span>0 ads<br>0 trackers<br>0 accounts</span></div>
+    </div>
+  </section>
+
+  <section class="hx-marq" aria-label="Our promise"><div class="hx-tick" aria-hidden="true"><span>NO ADS &#10022;</span><span class="a">NO TRACKING &#10022;</span><span>NO ACCOUNTS &#10022;</span><span class="b">NOT NOW, NOT EVER &#10022;</span><span>NO ADS &#10022;</span><span class="a">NO TRACKING &#10022;</span><span>NO ACCOUNTS &#10022;</span><span class="b">NOT NOW, NOT EVER &#10022;</span><span>NO ADS &#10022;</span><span class="a">NO TRACKING &#10022;</span><span>NO ACCOUNTS &#10022;</span><span class="b">NOT NOW, NOT EVER &#10022;</span><span>NO ADS &#10022;</span><span class="a">NO TRACKING &#10022;</span><span>NO ACCOUNTS &#10022;</span><span class="b">NOT NOW, NOT EVER &#10022;</span></div><p class="sr" style="position:absolute;left:-999px">No ads. No tracking. No accounts. Not now, not ever.</p></section>
+
   <div class="wrap">
-    <section class="hb-hero">
-      <h1 class="rise">Apps that mind their own <span class="hl">business.</span></h1>
-      <svg class="rise squig" viewBox="0 0 420 24" width="420" height="24" aria-hidden="true"><path d="M4 14 C 40 2, 70 24, 105 12 S 170 2, 210 14 S 280 24, 315 12 S 390 4, 416 12" fill="none" stroke="#7a3cff" stroke-width="6" stroke-linecap="round"/></svg>
-      <p class="lead rise">Small, useful apps that stay on your phone and out of your way. Free, open source, and they work even in airplane mode.</p>
-      <div class="btns rise"><a class="btn pri" href="#apps">See the apps</a><a class="btn ghost" href="https://github.com/lumio-apps">Source on GitHub</a></div>
-      <div class="stickers"><span class="sticker st1">NO ADS</span><span class="sticker st2">NO TRACKING</span><span class="sticker st3">NO ACCOUNTS</span></div>
+    <section id="apps" class="hx-apps shell">
+      <h2 class="hx-h">Pick a category.</h2>
+      <p class="hint">Ten apps in seven groups. Tap one to see only those.</p>
+      <input type="radio" name="f" id="f-all" checked><input type="radio" name="f" id="f-everyday"><input type="radio" name="f" id="f-money"><input type="radio" name="f" id="f-docs"><input type="radio" name="f" id="f-travel"><input type="radio" name="f" id="f-games"><input type="radio" name="f" id="f-health"><input type="radio" name="f" id="f-learn">
+      <div class="bar" role="radiogroup" aria-label="Filter apps by category"><label class="chip" for="f-all">All<em>10</em></label><label class="chip" for="f-everyday">Everyday<em>2</em></label><label class="chip" for="f-money">Money<em>1</em></label><label class="chip" for="f-docs">Documents<em>1</em></label><label class="chip" for="f-travel">Travel<em>1</em></label><label class="chip" for="f-games">Games<em>2</em></label><label class="chip" for="f-health">Health<em>1</em></label><label class="chip" for="f-learn">Learn<em>2</em></label></div>
+    <section class="hx-sec c-everyday k-calc" id="everyday">
+      <div class="hx-side">
+        <p class="hx-num">01 / Everyday</p>
+        <h2>Tools you reach for every day.</h2>
+        <p class="hx-blurb">Quick, quiet helpers that open instantly and finish the job, whether that is a sum or a sentence in another language.</p>
+        <div class="hx-scene" aria-hidden="true"><div class="hx-keys"><i style="--i:0">7</i><i style="--i:1">8</i><i style="--i:2">9</i><i style="--i:3">&divide;</i><i style="--i:7">4</i><i style="--i:6">5</i><i style="--i:5">6</i><i style="--i:4">&times;</i><i style="--i:8">1</i><i style="--i:9">2</i><i style="--i:10">3</i><i style="--i:11">=</i></div></div>
+      </div>
+      <div class="hx-list">
+        <a href="calculator.html" class="hx-card k-calc" aria-label="Open Calculator">
+          <div class="hx-top"><img class="hx-ic" src="img/calculator-icon.png" alt="" width="76" height="76"><div><div class="hx-name"><h3>Calculator</h3><span class="hx-ver">v1.9.0</span></div><p class="hx-tag">The calculator that gets out of your way.</p></div></div>
+          <p class="hx-idea">A calculator should open fast, answer fast and stay out of the way. Calculator keeps the basics one tap away, then adds the maths people really do: GST, EMI, SIP, discounts, units and dates, all on a light, flat screen that stays smooth on older phones.</p>
+          <ul class="hx-chips"><li>Scientific mode</li><li>Unit converter</li><li>GST, EMI and SIP</li></ul>
+          <div class="hx-foot"><span>Online only when you tap Check for updates</span><b>See the app <i>&rarr;</i></b></div>
+        </a>
+        <a href="verto.html" class="hx-card k-vt" aria-label="Open Verto">
+          <div class="hx-top"><img class="hx-ic" src="img/verto-icon.png" alt="" width="76" height="76"><div><div class="hx-name"><h3>Verto</h3><span class="hx-ver">v1.2.0</span></div><p class="hx-tag">A translator that never sends your words anywhere.</p></div></div>
+          <p class="hx-idea">Most translators ship every sentence you type to a server. Verto does the opposite: the translation engine lives on your phone, so a private message, a prescription or a bank letter stays yours. Download only the languages you need, once, and use them anywhere, even in airplane mode.</p>
+          <ul class="hx-chips"><li>Offline translation</li><li>Language packs</li><li>Read aloud</li></ul>
+          <div class="hx-foot"><span>Online only for the language list, packs and updates</span><b>See the app <i>&rarr;</i></b></div>
+        </a>
+      </div>
+    </section>
+    <section class="hx-sec c-money k-pt" id="money">
+      <div class="hx-side">
+        <p class="hx-num">02 / Money</p>
+        <h2>Know where your money goes.</h2>
+        <p class="hx-blurb">No bank login, no cloud, no sign-up. Your numbers stay in a database on your own phone.</p>
+        <div class="hx-scene" aria-hidden="true"><span class="hx-coin" style="left:24%;--dl:0s"></span><span class="hx-coin" style="left:40%;--dl:.7s"></span><span class="hx-coin" style="left:56%;--dl:1.4s"></span><span class="hx-coin" style="left:70%;--dl:2.1s"></span><div class="hx-pocket">POCKET</div></div>
+      </div>
+      <div class="hx-list">
+        <a href="pockettally.html" class="hx-card k-pt" aria-label="Open PocketTally">
+          <div class="hx-top"><img class="hx-ic" src="img/pockettally-icon.png" alt="" width="76" height="76"><div><div class="hx-name"><h3>PocketTally</h3><span class="hx-ver">v1.11.0</span></div><p class="hx-tag">Every coin, counted.</p></div></div>
+          <p class="hx-idea">Money apps usually want your bank login and your data. PocketTally asks for nothing. Track wallets, budgets, subscriptions and money you lent, split a bill with friends, and watch your net worth and your year in review, in 20 languages with local number formats.</p>
+          <ul class="hx-chips"><li>20 languages</li><li>Split bills</li><li>Net worth</li></ul>
+          <div class="hx-foot"><span>Online only when you tap Check for updates</span><b>See the app <i>&rarr;</i></b></div>
+        </a>
+      </div>
+    </section>
+    <section class="hx-sec c-docs k-pw" id="docs">
+      <div class="hx-side">
+        <p class="hx-num">03 / Documents</p>
+        <h2>Paperwork without the upload.</h2>
+        <p class="hx-blurb">ID cards, contracts and spreadsheets are the last things you should hand to a stranger's website.</p>
+        <div class="hx-scene" aria-hidden="true"><div class="hx-pg" style="--r0:-12deg;--r1:-4deg;--dl:0s"><b></b><b></b><b style="width:50%"></b></div><div class="hx-pg" style="--r0:2deg;--r1:9deg;--dl:.5s"><b></b><b></b><b style="width:70%"></b></div><div class="hx-pg" style="--r0:14deg;--r1:20deg;--dl:1s"><b></b><b></b><b></b></div></div>
+      </div>
+      <div class="hx-list">
+        <a href="paperwise.html" class="hx-card k-pw" aria-label="Open Paperwise">
+          <div class="hx-top"><img class="hx-ic" src="img/paperwise-icon.png" alt="" width="76" height="76"><div><div class="hx-name"><h3>Paperwise</h3><span class="hx-ver">v1.9.0</span></div><p class="hx-tag">19 private tools for PDF, Excel and Word.</p></div></div>
+          <p class="hx-idea">Paper work should not mean uploading your ID card to a random site. Paperwise merges, splits, scans, signs, compresses and protects PDFs, and reads Excel and Word files, entirely on the phone. Your original file is never changed, and nothing is uploaded.</p>
+          <ul class="hx-chips"><li>19 tools</li><li>Scan and sign</li><li>Excel and Word viewer</li></ul>
+          <div class="hx-foot"><span>Online only when you tap Check for updates</span><b>See the app <i>&rarr;</i></b></div>
+        </a>
+      </div>
+    </section>
+    <section class="hx-sec c-travel k-st" id="travel">
+      <div class="hx-side">
+        <p class="hx-num">04 / Travel</p>
+        <h2>Land knowing the rules.</h2>
+        <p class="hx-blurb">Answers that work at the airport, with no signal and no sign-in.</p>
+        <div class="hx-scene" aria-hidden="true"><div class="hx-stamp">VISA FREE</div><svg class="hx-route" viewBox="0 0 400 60" preserveAspectRatio="none"><path d="M0 50 Q 100 -10 200 30 T 400 20"/></svg></div>
+      </div>
+      <div class="hx-list">
+        <a href="stamply.html" class="hx-card k-st" aria-label="Open Stamply">
+          <div class="hx-top"><img class="hx-ic" src="img/stamply-icon.png" alt="" width="76" height="76"><div><div class="hx-name"><h3>Stamply</h3><span class="hx-ver">v0.16.0</span></div><p class="hx-tag">Do I need a visa? Find out in two taps.</p></div></div>
+          <p class="hx-idea">Before you book, you want one answer: can I go? Stamply knows the entry rules for 199 passports and every destination, offline. Compare passports, plan a trip, count your Schengen 90/180 days and see the capital, currency and calling code of where you are heading.</p>
+          <ul class="hx-chips"><li>199 passports</li><li>Schengen counter</li><li>Works offline</li></ul>
+          <div class="hx-foot"><span>Online for visa data and exchange rates, only when you ask</span><b>See the app <i>&rarr;</i></b></div>
+        </a>
+      </div>
+    </section>
+    <section class="hx-sec c-games k-p2" id="games">
+      <div class="hx-side">
+        <p class="hx-num">05 / Games</p>
+        <h2>Calm games. No ads in the way.</h2>
+        <p class="hx-blurb">Puzzles you can play on a bus or in bed, that never pop up an advert halfway through a move.</p>
+        <div class="hx-scene" aria-hidden="true"><span class="hx-blk" style="left:14%;background:#8b7cff;--dl:0s"></span><span class="hx-blk" style="left:30%;background:#2ec4b6;--dl:.5s"></span><span class="hx-blk" style="left:46%;background:#ffd23f;--dl:1s"></span><span class="hx-blk" style="left:62%;background:#ff6b5b;--dl:1.5s"></span><span class="hx-blk" style="left:78%;background:#eee4da;--dl:2s"></span><div class="hx-base"></div></div>
+      </div>
+      <div class="hx-list">
+        <a href="pow2.html" class="hx-card k-p2" aria-label="Open Pow2">
+          <div class="hx-top"><img class="hx-ic" src="img/pow2-icon.png" alt="" width="76" height="76"><div><div class="hx-name"><h3>Pow2</h3><span class="hx-ver">v1.6.5</span></div><p class="hx-tag">Swipe. Merge. Keep growing.</p></div></div>
+          <p class="hx-idea">Slide the tiles, merge equal numbers and make bigger ones. There is no fixed goal, so you play for your own best. Four modes, four board sizes, undo, a hint and a daily challenge that is the same for everyone.</p>
+          <ul class="hx-chips"><li>4 modes</li><li>4 board sizes</li><li>Daily challenge</li></ul>
+          <div class="hx-foot"><span>Online only when you tap Check for updates</span><b>See the app <i>&rarr;</i></b></div>
+        </a>
+        <a href="cuboo.html" class="hx-card k-cb" aria-label="Open Cuboo">
+          <div class="hx-top"><img class="hx-ic" src="img/cuboo-icon.png" alt="" width="76" height="76"><div><div class="hx-name"><h3>Cuboo</h3><span class="hx-ver">v1.3.6</span></div><p class="hx-tag">Drag. Clear lines. Keep the combo going.</p></div></div>
+          <p class="hx-idea">Drag three pieces onto an 8&times;8 board and clear full rows and columns. Back-to-back clears build a combo that multiplies your score. Bombs, hints, Relaxed and Timed modes, a daily challenge, and calm scenes like Neon Night and Sunset.</p>
+          <ul class="hx-chips"><li>4 modes</li><li>Bombs and hints</li><li>Scenes</li></ul>
+          <div class="hx-foot"><span>Online only when you tap Check for updates</span><b>See the app <i>&rarr;</i></b></div>
+        </a>
+      </div>
+    </section>
+    <section class="hx-sec c-health k-sm" id="health">
+      <div class="hx-side">
+        <p class="hx-num">06 / Health</p>
+        <h2>Understand your sleep, privately.</h2>
+        <p class="hx-blurb">No watch, no microphone, no subscription, and no one else reading your nights.</p>
+        <div class="hx-scene" aria-hidden="true"><span class="hx-moon" style="width:230px;height:230px;margin:-115px 0 0 -115px;opacity:.25;--dl:0s"></span><span class="hx-moon" style="width:150px;height:150px;margin:-75px 0 0 -75px;--dl:.35s"></span><span class="hx-zz" style="left:62%;top:52%;--dl:0s">z</span><span class="hx-zz" style="left:66%;top:56%;--dl:1.4s">Z</span><span class="hx-zz" style="left:60%;top:58%;--dl:2.8s">z</span></div>
+      </div>
+      <div class="hx-list">
+        <a href="somno.html" class="hx-card k-sm" aria-label="Open Somno">
+          <div class="hx-top"><img class="hx-ic" src="img/somno-icon.png" alt="" width="76" height="76"><div><div class="hx-name"><h3>Somno</h3><span class="hx-ver">v1.3.0</span></div><p class="hx-tag">Sleep tracking that never leaves your phone.</p></div></div>
+          <p class="hx-idea">Most sleep trackers want a watch, a microphone or an account. Somno uses one simple idea: when you leave your phone locked for a few hours, you are most likely asleep. It turns that into streaks, consistency and sleep debt, with a bedtime reminder and a Phone tab for battery and device facts.</p>
+          <ul class="hx-chips"><li>Streak and sleep debt</li><li>Bedtime reminder</li><li>Phone tab</li></ul>
+          <div class="hx-foot"><span>Online only for updates (daily check can be switched off)</span><b>See the app <i>&rarr;</i></b></div>
+        </a>
+      </div>
+    </section>
+    <section class="hx-sec c-learn k-an" id="learn">
+      <div class="hx-side">
+        <p class="hx-num">07 / Learn</p>
+        <h2>Curious about the body or the sky?</h2>
+        <p class="hx-blurb">Two small atlases that turn your phone into a science book, with nothing collected about you.</p>
+        <div class="hx-scene" aria-hidden="true"><span class="hx-star" style="left:12%;top:18%"></span><span class="hx-star" style="left:82%;top:14%;animation-delay:1s"></span><span class="hx-star" style="left:70%;top:82%;animation-delay:2s"></span><span class="hx-star" style="left:20%;top:76%;animation-delay:.5s"></span><div class="hx-sun"></div><div class="hx-orb" style="--t:9s;width:130px;height:130px;margin:-65px 0 0 -65px"><span style="left:-7px;top:50%;margin-top:-7px;width:14px;height:14px;background:#ffb98a"></span></div><div class="hx-orb" style="--t:16s;width:200px;height:200px;margin:-100px 0 0 -100px"><span style="right:-10px;top:50%;margin-top:-10px;width:20px;height:20px;background:#8fc1ff"></span></div><div class="hx-orb" style="--t:26s;width:270px;height:270px;margin:-135px 0 0 -135px"><span style="left:50%;top:-12px;margin-left:-12px;width:24px;height:24px;background:#ffd23f"></span></div></div>
+      </div>
+      <div class="hx-list">
+        <a href="anatomo.html" class="hx-card k-an" aria-label="Open Anatomo">
+          <div class="hx-top"><img class="hx-ic" src="img/anatomo-icon.png" alt="" width="76" height="76"><div><div class="hx-name"><h3>Anatomo</h3><span class="hx-ver">v3.0.0</span></div><p class="hx-tag">The human body in 2D and 3D.</p></div></div>
+          <p class="hx-idea">Tap any part of the body and learn what it does, what is good for it and what harms it. Switch between male and female bodies, download the optional 3D pack to pull the body apart, then test yourself with quizzes and flashcards.</p>
+          <ul class="hx-chips"><li>2D and 3D</li><li>Quiz and flashcards</li><li>Dark and light</li></ul>
+          <div class="hx-foot"><span>Online only for the optional 3D pack and updates</span><b>See the app <i>&rarr;</i></b></div>
+        </a>
+        <a href="heliora.html" class="hx-card k-he" aria-label="Open Heliora">
+          <div class="hx-top"><img class="hx-ic" src="img/heliora-icon.png" alt="" width="76" height="76"><div><div class="hx-name"><h3>Heliora</h3><span class="hx-ver">v1.11.0</span></div><p class="hx-tag">Explore the Solar System, offline first.</p></div></div>
+          <p class="hx-idea">See where every planet really is today, rotate 3D worlds, and find out which planets you can spot tonight from your own city. Compare worlds, check your weight and age on each one, and get an honest 0 to 10 answer to: could humans live here?</p>
+          <ul class="hx-chips"><li>Real positions</li><li>Tonight's sky</li><li>Space events</li></ul>
+          <div class="hx-foot"><span>Online for updates. Space station and launches are opt-in</span><b>See the app <i>&rarr;</i></b></div>
+        </a>
+      </div>
+    </section>
+    </section>
+
+    <section class="hx-honest">
+      <div>
+        <p class="hx-num">The honest part</p>
+        <h2>Offline first. We tell you exactly when the internet is used.</h2>
+        <p>Every feature that matters works in airplane mode. A few apps reach out to GitHub or a public data file, only for the things below, and never send your text, files or personal data.</p>
+      </div>
+      <ul><li><b>All apps</b><span>Ask GitHub for a newer version when you tap Check for updates. Somno and Heliora can also check once a day, which you can switch off.</span></li><li><b>Verto</b><span>Loads its language list when it opens and downloads a pack when you tap Download. Your text is never sent.</span></li><li><b>Stamply</b><span>Loads visa data and an exchange rate when you tap, plus an optional daily data check that is off by default.</span></li><li><b>Anatomo</b><span>Downloads its optional 3D pack once, when you tap Download.</span></li><li><b>Heliora</b><span>The space station map and rocket launch list use public space-data services, only if you turn on Online features.</span></li></ul>
     </section>
   </div>
-
-  <section class="marq" aria-label="Our promise"><div class="tick" aria-hidden="true"><span>NO ADS &#10022;</span><span class="y">NO TRACKING &#10022;</span><span>NO ACCOUNTS &#10022;</span><span class="p">NOT NOW, NOT EVER &#10022;</span><span>NO ADS &#10022;</span><span class="y">NO TRACKING &#10022;</span><span>NO ACCOUNTS &#10022;</span><span class="p">NOT NOW, NOT EVER &#10022;</span></div><p class="sr" style="position:absolute;left:-999px">No ads. No tracking. No accounts. Not now, not ever.</p></section>
-
-  <div class="wrap">
-    <section class="hb-apps" id="apps">
-      <h2>Pick your sticker.</h2>
-      <p class="hint">Ten apps. Tap a category to see only those.</p>
-      <div class="shell">
-        <input type="radio" name="f" id="f-all" checked><input type="radio" name="f" id="f-everyday"><input type="radio" name="f" id="f-money"><input type="radio" name="f" id="f-docs"><input type="radio" name="f" id="f-travel"><input type="radio" name="f" id="f-games"><input type="radio" name="f" id="f-health"><input type="radio" name="f" id="f-learn">
-        <div class="bar" role="radiogroup" aria-label="Filter apps by category"><label class="chip" for="f-all">All<em>10</em></label><label class="chip" for="f-everyday">Everyday<em>2</em></label><label class="chip" for="f-money">Money<em>1</em></label><label class="chip" for="f-docs">Documents<em>1</em></label><label class="chip" for="f-travel">Travel<em>1</em></label><label class="chip" for="f-games">Games<em>2</em></label><label class="chip" for="f-health">Health<em>1</em></label><label class="chip" for="f-learn">Learn<em>2</em></label></div>
-      <div class="cards">
-      <a href="calculator.html" class="pop card k-calc c-everyday" aria-label="Open Calculator">
-        <span class="cat">Everyday</span>
-        <div class="art a-calc" aria-hidden="true"><img src="img/calculator-icon.png" alt="" width="104" height="104"><span class="sym" style="left:22%">+</span><span class="sym" style="left:36%;animation-delay:.7s">&times;</span><span class="sym" style="right:34%;animation-delay:1.4s">&divide;</span><span class="sym" style="right:20%;animation-delay:2.1s">=</span></div>
-        <div class="row"><h3>Calculator</h3><span class="ver">v1.9.0</span></div>
-        <p>Scientific mode, unit converter, GST, EMI, SIP and date tools.</p>
-        <span class="go">Open &rarr;</span>
-      </a>
-
-      <a href="pockettally.html" class="pop card k-pt c-money" aria-label="Open PocketTally">
-        <span class="cat">Money</span>
-        <div class="art a-pt" aria-hidden="true"><img src="img/pockettally-icon.png" alt="" width="104" height="104"><span class="coin" style="left:24%"></span><span class="coin" style="left:48%;animation-delay:.8s"></span><span class="coin" style="right:22%;animation-delay:1.6s"></span></div>
-        <div class="row"><h3>PocketTally</h3><span class="ver">v1.11.0</span></div>
-        <p>Wallets, budgets, subscriptions and split bills in 20 languages.</p>
-        <span class="go">Open &rarr;</span>
-      </a>
-
-      <a href="paperwise.html" class="pop card k-pw c-docs" aria-label="Open Paperwise">
-        <span class="cat">Documents</span>
-        <div class="art a-pw" aria-hidden="true"><span class="pg pg1"></span><span class="pg pg2"></span><img src="img/paperwise-icon.png" alt="" width="104" height="104"></div>
-        <div class="row"><h3>Paperwise</h3><span class="ver">v1.9.0</span></div>
-        <p>19 private tools for PDF, Excel and Word. Your files never leave your phone.</p>
-        <span class="go">Open &rarr;</span>
-      </a>
-
-      <a href="stamply.html" class="pop card k-st c-travel" aria-label="Open Stamply">
-        <span class="cat">Travel</span>
-        <div class="art a-st" aria-hidden="true"><span class="rip"></span><img src="img/stamply-icon.png" alt="" width="104" height="104"><span class="ok">OK</span></div>
-        <div class="row"><h3>Stamply</h3><span class="ver">v0.16.0</span></div>
-        <p>Do I need a visa? Rules for 199 passports, even offline.</p>
-        <span class="go">Open &rarr;</span>
-      </a>
-
-      <a href="pow2.html" class="pop card k-p2 c-games" aria-label="Open Pow2">
-        <span class="cat">Games</span>
-        <div class="art a-p2" aria-hidden="true"><img src="img/pow2-icon.png" alt="" width="104" height="104"><span class="hop" style="left:14%;background:#eee4da">2</span><span class="hop" style="left:29%;background:#ffd23f;animation-delay:.25s">4</span><span class="hop" style="right:29%;background:#ff9a3d;animation-delay:.5s">8</span><span class="hop" style="right:14%;background:#ff6b6b;animation-delay:.75s">16</span></div>
-        <div class="row"><h3>Pow2</h3><span class="ver">v1.6.5</span></div>
-        <p>Swipe. Merge. Keep growing. A calm number puzzle.</p>
-        <span class="go">Open &rarr;</span>
-      </a>
-
-      <a href="cuboo.html" class="pop card k-cb c-games" aria-label="Open Cuboo">
-        <span class="cat">Games</span>
-        <div class="art a-cb" aria-hidden="true"><img src="img/cuboo-icon.png" alt="" width="104" height="104"><span class="blk" style="left:18%;bottom:22px;background:#8b7cff"></span><span class="blk" style="left:26%;bottom:22px;background:#2ec4b6;animation-delay:.3s"></span><span class="blk" style="right:26%;bottom:22px;background:#ffd23f;animation-delay:.6s"></span><span class="blk" style="right:18%;bottom:22px;background:#fff;animation-delay:.9s"></span></div>
-        <div class="row"><h3>Cuboo</h3><span class="ver">v1.3.6</span></div>
-        <p>A calm block puzzle. Drag, clear lines, keep the combo going.</p>
-        <span class="go">Open &rarr;</span>
-      </a>
-
-      <a href="verto.html" class="pop card k-vt c-everyday" aria-label="Open Verto">
-        <span class="cat">Everyday</span>
-        <div class="art a-vt" aria-hidden="true"><img src="img/verto-icon.png" alt="" width="104" height="104"><span class="hop" style="left:14%;background:#fff">A</span><span class="hop" style="left:29%;background:#b3adf0;animation-delay:.25s">&#2309;</span><span class="hop" style="right:29%;background:#ffd23f;animation-delay:.5s">&#25991;</span></div>
-        <div class="row"><h3>Verto</h3><span class="ver">v1.2.0</span></div>
-        <p>A translator that works offline and never sends your text anywhere.</p>
-        <span class="go">Open &rarr;</span>
-      </a>
-
-      <a href="somno.html" class="pop card k-sm c-health" aria-label="Open Somno">
-        <span class="cat">Health</span>
-        <div class="art a-sm" aria-hidden="true"><img src="img/somno-icon.png" alt="" width="104" height="104"><span class="sym" style="left:24%">z</span><span class="sym" style="left:38%;animation-delay:.9s">Z</span><span class="sym" style="right:30%;animation-delay:1.8s">z</span></div>
-        <div class="row"><h3>Somno</h3><span class="ver">v1.2.3</span></div>
-        <p>Sleep tracking from your phone's lock time. No watch, no cloud.</p>
-        <span class="go">Open &rarr;</span>
-      </a>
-
-      <a href="anatomo.html" class="pop card k-an c-learn" aria-label="Open Anatomo">
-        <span class="cat">Learn</span>
-        <div class="art a-an" aria-hidden="true"><img src="img/anatomo-icon.png" alt="" width="104" height="104"><span class="sym" style="left:24%">&#9829;</span><span class="sym" style="left:40%;animation-delay:.9s">+</span><span class="sym" style="right:26%;animation-delay:1.8s">&#9829;</span></div>
-        <div class="row"><h3>Anatomo</h3><span class="ver">v3.0.0</span></div>
-        <p>Explore the human body in 2D and 3D, with parts, quizzes and flashcards.</p>
-        <span class="go">Open &rarr;</span>
-      </a>
-
-      <a href="heliora.html" class="pop card k-he c-learn" aria-label="Open Heliora">
-        <span class="cat">Learn</span>
-        <div class="art a-he" aria-hidden="true"><img src="img/heliora-icon.png" alt="" width="104" height="104"><span class="sym" style="left:20%">&#9679;</span><span class="sym" style="left:38%;animation-delay:.9s">&#9675;</span><span class="sym" style="right:26%;animation-delay:1.8s">&#9733;</span></div>
-        <div class="row"><h3>Heliora</h3><span class="ver">v1.8.0</span></div>
-        <p>Explore the Solar System: tonight's sky, space events, 3D worlds. Offline first.</p>
-        <span class="go">Open &rarr;</span>
-      </a>
-
-      <div class="pop card dark">
-        <h3>100% open source.</h3>
-        <p>Read every line, build it yourself, tell us what to fix.</p>
-        <a class="btn" href="https://github.com/lumio-apps">View on GitHub</a>
-      </div>
-      </div>
-      </div>
-    </section>
   </div>
 </main>
 
