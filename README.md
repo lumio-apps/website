@@ -10,16 +10,18 @@ pages for [Calculator](https://github.com/lumio-apps/calculator),
 [Verto](https://github.com/lumio-apps/verto),
 [Somno](https://github.com/lumio-apps/somno),
 [Anatomo](https://github.com/lumio-apps/anatomo),
-[Heliora](https://github.com/lumio-apps/heliora) and
-[Lockeye](https://github.com/lumio-apps/lockeye).
+[Heliora](https://github.com/lumio-apps/heliora),
+[Lockeye](https://github.com/lumio-apps/lockeye),
+[Peekless](https://github.com/lumio-apps/peekless) and
+[Muster](https://github.com/lumio-apps/muster).
 
-Plain HTML and CSS, no build step and no JavaScript frameworks. Hosted with
+Plain HTML and CSS, no build step and no JavaScript frameworks (a few lines of plain JavaScript run the light/dark switch and the doors on the home page). Hosted with
 GitHub Pages. No ads, no tracking, no cookies.
 
 ## Pages
 
-- `index.html`: home page, with a category filter (Everyday, Money, Documents, Travel, Games, Health, Learn, Security)
-- `calculator.html`, `pockettally.html`, `paperwise.html`, `stamply.html`, `pow2.html`, `cuboo.html`, `verto.html`, `somno.html`, `anatomo.html`, `heliora.html`, `lockeye.html`: app pages
+- `index.html`: home page: the developer, a door for each of nine groups (Everyday, Money, Documents, Work, Travel, Games, Health, Learn, Security), the apps room by room and a 2026 timeline
+- `calculator.html`, `pockettally.html`, `paperwise.html`, `stamply.html`, `pow2.html`, `cuboo.html`, `verto.html`, `somno.html`, `anatomo.html`, `heliora.html`, `lockeye.html`, `peekless.html`, `muster.html`: app pages
 - `privacy.html` and `privacy-<app>.html`: privacy policy and one policy per app
 - `terms.html`, `licenses.html`, `about.html`, `faq.html`, `contact.html`: other pages
 - `404.html`, `sitemap.xml`, `robots.txt`
@@ -28,6 +30,7 @@ GitHub Pages. No ads, no tracking, no cookies.
 
 - `style.css`: shared styles, with a light and a dark theme
 - `theme.js`: the light/dark switch (saved only in the visitor's browser)
+- `home.js`: opens the doors and pulls the theme cord on the home page (stores nothing)
 - `img/`: app icons and screenshots
 - `CNAME`: custom domain for GitHub Pages
 
