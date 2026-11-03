@@ -15,12 +15,12 @@ pages for [Calculator](https://github.com/lumio-apps/calculator),
 [Peekless](https://github.com/lumio-apps/peekless) and
 [Muster](https://github.com/lumio-apps/muster).
 
-Plain HTML and CSS, no build step and no JavaScript frameworks (a few lines of plain JavaScript run the light/dark switch and the doors on the home page). Hosted with
+Plain HTML and CSS, no build step and no JavaScript frameworks (a few lines of plain JavaScript run the light/dark switch). Hosted with
 GitHub Pages. No ads, no tracking, no cookies.
 
 ## Pages
 
-- `index.html`: home page: the developer, a door for each of nine groups (Everyday, Money, Documents, Work, Travel, Games, Health, Learn, Security), the apps room by room and a 2026 timeline
+- `index.html`: home page: "Small Apps. Big Freedom.", all 13 apps as cards, privacy and open-source cards, the developer, a 2026 timeline, the honest list of network use and a short FAQ
 - `calculator.html`, `pockettally.html`, `paperwise.html`, `stamply.html`, `pow2.html`, `cuboo.html`, `verto.html`, `somno.html`, `anatomo.html`, `heliora.html`, `lockeye.html`, `peekless.html`, `muster.html`: app pages
 - `privacy.html` and `privacy-<app>.html`: privacy policy and one policy per app
 - `terms.html`, `licenses.html`, `about.html`, `faq.html`, `contact.html`: other pages
@@ -30,7 +30,6 @@ GitHub Pages. No ads, no tracking, no cookies.
 
 - `style.css`: shared styles, with a light and a dark theme
 - `theme.js`: the light/dark switch (saved only in the visitor's browser)
-- `home.js`: opens the doors and pulls the theme cord on the home page (stores nothing)
 - `img/`: app icons and screenshots
 - `CNAME`: custom domain for GitHub Pages
 
