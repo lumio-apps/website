@@ -40,6 +40,16 @@ GitHub Pages. No ads, no tracking, no cookies.
 3. Add a card with a category on the home page, a link in the header and footer, and an entry in `sitemap.xml`.
 4. Update About, Contact, Terms and Licenses.
 
+## Updating an app
+
+When an app gets a new version, check three things so the site stays honest:
+
+1. The version number on its page ("Current version") and on its home card.
+2. New features, new permissions and any new network use, on the app page **and** in its `privacy-<app>.html`, the master privacy page, the FAQ and the Terms.
+3. Screenshots in `img/`. Only use images that match the current look of the app.
+
+Current versions on the site: Calculator 1.9.0, PocketTally 1.11.0, Paperwise 1.11.0, Stamply 0.16.0, Pow2 1.6.5, Cuboo 1.3.6, Verto 1.2.0, Somno 1.3.1, Anatomo 3.0.0, Heliora 1.16.1, Lockeye 1.1.2, Peekless 2.2.1, Muster 1.5.0.
+
 ## License
 
 Code: MIT. Screenshots and icons belong to Lumio Apps.

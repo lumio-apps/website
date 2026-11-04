@@ -5,16 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
   <title>Peekless by Lumio Apps</title>
-  <meta name="description" content="Peekless is a private Android app that scores every installed app from 0 to 100 by its permissions and trackers, in plain English. Offline, no ads, no tracking.">
+  <meta name="description" content="Peekless is a private Android app that scores every installed app from 0 to 100 by its permissions and trackers, in plain English. Optional network monitor. Offline, no ads, no tracking.">
   <meta property="og:title" content="Peekless by Lumio Apps">
-  <meta property="og:description" content="Peekless is a private Android app that scores every installed app from 0 to 100 by its permissions and trackers, in plain English. Offline, no ads, no tracking.">
+  <meta property="og:description" content="Peekless is a private Android app that scores every installed app from 0 to 100 by its permissions and trackers, in plain English. Optional network monitor. Offline, no ads, no tracking.">
   <meta property="og:image" content="https://lumio-apps.online/img/peekless-icon.png">
   <link rel="icon" href="img/peekless-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
   <script src="theme.js"></script>
-  <link rel="stylesheet" href="style.css?v=20261103a">
+  <link rel="stylesheet" href="style.css?v=20261104a">
 </head>
 <body class="pk">
 <a class="skip" href="#main">Skip to content</a>
@@ -43,7 +43,7 @@
       <div>
         <h1>Peekless</h1>
         <p class="lead">See who's peeking at you. Peekless gives every app on your phone a privacy score from 0 to 100, based on the permissions it asks for and the trackers inside it, explained in plain English. Offline, no account, no ads, no tracking.</p>
-        <p class="platforms">Android &middot; Works offline &middot; GitHub only</p>
+        <p class="platforms">Android &middot; 25 languages &middot; Works offline</p>
         <div class="btns">
           <a class="btn light" href="https://github.com/lumio-apps/peekless/releases/latest">Download APK</a>
           <a class="btn ghost" href="https://github.com/lumio-apps/peekless">Source code</a>
@@ -51,16 +51,17 @@
       </div>
     </div>
     <div class="tile f1 phone-tile">
-      <img src="img/peekless-home.jpg" alt="Peekless home screen with a phone score of 83 out of 100" width="250" height="400">
+      <img src="img/peekless-v22-home.jpg" alt="Peekless home screen with the privacy score gauge" width="250" height="400">
     </div>
   </div>
   <div class="bento">
     <section class="tile f3 shots-tile" aria-labelledby="shots-title">
       <h2 id="shots-title">Screenshots</h2>
       <div class="shots" tabindex="0" role="group" aria-label="Screenshots, scroll sideways">
-        <figure><img src="img/peekless-home.jpg" alt="Your phone score and the apps that need attention" width="200" height="330" loading="lazy"><figcaption>Home</figcaption></figure>
-        <figure><img src="img/peekless-apps.jpg" alt="Every app scored, riskiest first" width="200" height="330" loading="lazy"><figcaption>Apps</figcaption></figure>
-        <figure><img src="img/peekless-permissions.jpg" alt="Who can use your camera, location and more" width="200" height="330" loading="lazy"><figcaption>Permissions</figcaption></figure>
+        <figure><img src="img/peekless-v22-home.jpg" alt="Your phone score, the privacy overview and one Scan button" width="200" height="330" loading="lazy"><figcaption>Home</figcaption></figure>
+        <figure><img src="img/peekless-v22-apps.jpg" alt="Every app scored, riskiest first" width="200" height="330" loading="lazy"><figcaption>Apps</figcaption></figure>
+        <figure><img src="img/peekless-v22-security.jpg" alt="Security checks for special access and risky installs" width="200" height="330" loading="lazy"><figcaption>Security</figcaption></figure>
+        <figure><img src="img/peekless-v22-network.jpg" alt="Which domain names each app asks for" width="200" height="330" loading="lazy"><figcaption>Network monitor</figcaption></figure>
       </div>
     </section>
   </div>  <h2 style="margin:40px 8px 0;font-size:clamp(28px,4vw,40px)">Why Peekless</h2>  <div class="bento">
@@ -74,7 +75,7 @@
     </div>
     <div class="tile f1 t-blue">
       <h3>Finds the trackers</h3>
-      <p>Spots about 60 known tracking and advertising SDKs inside your apps and shows which ones each app carries.</p>
+      <p>Spots about 60 known tracking and advertising SDKs inside your apps. An optional Deep scan also reads class names in the code, to find trackers the manifest does not show.</p>
     </div>
     <div class="tile f1 t-pink">
       <h3>Private and open</h3>
@@ -88,19 +89,23 @@
     </div>
     <div class="tile f1 t-blue">
       <h3>Permissions and trackers</h3>
-      <ul><li>A <b>permissions view</b> shows who can use your camera, microphone, location, contacts, SMS and more</li><li><b>Tracker detection</b> reads each app's manifest for about 60 known tracking and ad SDKs</li><li>A <b>trackers view</b> lists them across all your apps</li><li>The tracker list can be updated when you tap the button, and a downloaded list can only add trackers, never remove them</li></ul>
+      <ul><li>A <b>permissions view</b> shows who can use your camera, microphone, location, contacts, SMS and more</li><li><b>Tracker detection</b> reads each app's manifest for about 60 known tracking and ad SDKs</li><li><b>Deep scan (optional):</b> turn it on in Settings to also read the class names inside each app's code. It works offline, skips apps that came with your phone, and is slower only the first time</li><li>A <b>Trackers tab</b> shows which tracker sits in which apps, most common first</li><li>The tracker list can be updated when you tap the button, and a downloaded list can only add trackers, never remove them</li></ul>
     </div>
     <div class="tile f1 t-pink">
+      <h3>Network monitor (optional)</h3>
+      <ul><li><b>Off until you switch it on.</b> Android then asks you to allow a VPN connection</li><li>It shows <b>which domain names each app asks for</b> and marks the ones that belong to known ad and analytics services</li><li>It is a <b>local VPN that takes only DNS lookups,</b> so your internet speed does not change. It sees names, never pages, messages or any content, and nothing leaves your phone</li><li>Counts are kept on your phone and you can clear them at any time. Switch it off in Peekless or in Android settings</li><li><b>Honest limits:</b> it can miss apps that use their own encrypted DNS (DNS over HTTPS), it does not work when Private DNS is set to a fixed provider, and showing which app asked needs Android 10 or newer</li></ul>
+    </div>
+    <div class="tile f1 t-orange">
       <h3>Security checks</h3>
       <ul><li>Apps with <b>accessibility access</b>, <b>device admin</b> or <b>notification access</b></li><li>Apps <b>installed from outside a store</b>, and an <b>install source</b> shown on every app</li><li>Debuggable builds and apps built for very old Android versions</li><li>An optional <b>unused apps</b> check if you allow Usage access, and a <b>fix wizard</b> that walks you through the worst problems</li></ul>
     </div>
-    <div class="tile f1 t-orange">
+    <div class="tile f1 t-green">
       <h3>Keep an eye on it</h3>
       <ul><li>A <b>score over time</b> chart, so you see whether your phone is getting safer</li><li>An optional <b>weekly summary</b> and optional <b>app alerts</b> when a new app arrives or an app gains a sensitive permission (checked on your phone about every 6 hours)</li><li>A <b>changes list</b> shows what is new since last time</li><li>A <b>home screen widget</b> and a <b>Quick Settings tile</b></li></ul>
     </div>
-    <div class="tile f1 t-green">
+    <div class="tile f1">
       <h3>Share and everyday use</h3>
-      <ul><li><b>Share a report</b>, or export it as a <b>PDF</b> or <b>JSON</b> file</li><li><b>25 languages</b>, and a light or dark Material 3 look</li><li><b>In-app updates:</b> check, download and install a new version without leaving the app</li></ul>
+      <ul><li><b>Share a report</b>, or export it as a <b>PDF</b> or <b>JSON</b> file</li><li><b>25 languages,</b> following your phone language or the one you pick in Settings</li><li><b>New look:</b> a dark green design with a gauge for your score, a privacy overview (what share of your apps can use camera, microphone, location and trackers) and one big Scan button. Light and dark themes</li><li><b>In-app updates:</b> check, download and install a new version without leaving the app</li></ul>
     </div>
   </div>  <div class="bento">
     <div class="tile f3 t-accent">
@@ -115,7 +120,7 @@
   <div class="bento">
     <div class="tile f3 t-dark">
       <h2>Private by design</h2>
-      <p>Peekless collects nothing. No account, no ads, no analytics and no tracking. Scoring happens on your phone, and the list of your apps never leaves it. The internet is used only when you tap Check for updates, download an update or update the tracker list, and it contacts GitHub only. Read the full <a href="privacy-peekless.html">privacy policy</a>.</p>
+      <p>Peekless collects nothing. No account, no ads, no analytics and no tracking. Scoring happens on your phone, and the list of your apps never leaves it. The optional Network monitor uses a local VPN for DNS lookups only; nothing leaves your phone. The internet is used only when you tap Check for updates, download an update or update the tracker list, and it contacts GitHub only. Read the full <a href="privacy-peekless.html">privacy policy</a>.</p>
     </div>
   </div>
   <div class="bento">
@@ -126,7 +131,8 @@
         <li>Download <code>peekless-x.y.z.apk</code> and open it. Android may ask once to allow installs from your browser.</li>
         <li>Open Peekless and tap the refresh button to score your apps.</li>
       </ol>
-      <p class="note"><b>GitHub only, on purpose.</b> Later versions install from inside the app.</p>
+      <p class="note"><b>Updates:</b> after that, update from inside Peekless: Settings &rsaquo; Check for updates.</p>
+      <p class="note"><b>F-Droid:</b> Peekless is also prepared for F-Droid. F-Droid signs apps with its own key, so an F-Droid install and a GitHub install cannot update each other. Pick one source.</p>
     </div>
   </div>
   <div class="bento">
@@ -134,9 +140,10 @@
       <h2>App details</h2>
       <dl class="dl">
       <div><dt>Platform</dt><dd>Android</dd></div>
-      <div><dt>Current version</dt><dd>1.5.0</dd></div>
+      <div><dt>Current version</dt><dd>2.2.1</dd></div>
       <div><dt>Price</dt><dd>Free, no ads, no in-app purchases</dd></div>
-      <div><dt>Internet</dt><dd>Not needed. Only when you tap to check for updates, download one or update the tracker list</dd></div>
+      <div><dt>Languages</dt><dd>25</dd></div>
+      <div><dt>Internet</dt><dd>Not needed. Only when you tap to check for updates, download one or update the tracker list. The Network monitor is a local VPN and sends nothing out</dd></div>
       <div><dt>License</dt><dd>GPL-3.0</dd></div>
       <div><dt>Source code</dt><dd><a href="https://github.com/lumio-apps/peekless">github.com/lumio-apps/peekless</a></dd></div>
       <div><dt>Privacy policy</dt><dd><a href="privacy-peekless.html">Read the privacy policy</a></dd></div>

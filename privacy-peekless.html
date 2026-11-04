@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
   <script src="theme.js"></script>
-  <link rel="stylesheet" href="style.css?v=20261103a">
+  <link rel="stylesheet" href="style.css?v=20261104a">
 </head>
 <body class="pk">
 <a class="skip" href="#main">Skip to content</a>
@@ -41,9 +41,9 @@
       <p class="crumb"><a href="privacy.html">&larr; All privacy policies</a></p>
       <h1>Peekless Privacy Policy</h1>
       
-      <p class="meta">Last updated: 3 November 2026<br>Developer: Lumio Apps<br>Source code: <a href="https://github.com/lumio-apps/peekless">github.com/lumio-apps/peekless</a></p>
+      <p class="meta">Last updated: 4 November 2026<br>Developer: Lumio Apps<br>Source code: <a href="https://github.com/lumio-apps/peekless">github.com/lumio-apps/peekless</a></p>
 
-      <div class="callout"><b>In short:</b> Peekless collects nothing. It scores your apps on your phone, and the list of your apps never leaves it. The only network use is the buttons you tap to look for updates or a newer tracker list, and it contacts GitHub only.</div>
+      <div class="callout"><b>In short:</b> Peekless collects nothing. It scores your apps on your phone, and the list of your apps never leaves it. The optional Network monitor is a local VPN for DNS lookups only, and nothing leaves your phone. The only network use is the buttons you tap to look for updates or a newer tracker list, and it contacts GitHub only.</div>
 
       <h2>Data we collect</h2>
       <p><b>None.</b> Peekless does not collect, store on a server, transmit, share or sell any personal or usage data. Lumio Apps runs no servers for this app.</p>
@@ -55,11 +55,11 @@
       </ul>
 
       <h2>Data stored on your device</h2>
-      <p>Your settings, your trusted apps list, the score history behind the score-over-time chart, your report exports and the tracker list (the one shipped with the app, plus a newer one if you update it). All of it stays in the app's private storage on your phone. Uninstalling the app removes it. Reports you export or share yourself stay where you put them.</p>
+      <p>Your settings, your trusted apps list, the score history behind the score-over-time chart, the optional Network monitor counts (which domain names each app asked for and how often), the results of the optional Deep scan, your report exports and the tracker list (the one shipped with the app, plus a newer one if you update it). All of it stays in the app's private storage on your phone. Uninstalling the app removes it. Reports you export or share yourself stay where you put them.</p>
       <p>This data never leaves your device through Peekless. Uninstalling the app removes it.</p>
 
       <h2>Internet access</h2>
-      <p>Peekless is shared only on <b>GitHub</b>, on purpose. It works completely offline: reading your installed apps, their permissions and their trackers, and working out the scores all happen on your phone. The internet is used <b>only when you tap</b> one of these:</p><ul><li><b>Check for updates:</b> Peekless asks the public GitHub API whether a newer version exists and, if you agree, downloads the new APK from GitHub.</li><li><b>Update the tracker list:</b> Peekless downloads a newer tracker list from <code>raw.githubusercontent.com/lumio-apps/peekless</code>. A downloaded list is checked first and can only add trackers, never remove them.</li></ul><p>No personal data and no list of your apps is sent. GitHub sees these requests like any web request (for example your IP address). GitHub's own privacy statement applies to these requests: <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a>.</p>
+      <p>Peekless is shared on <b>GitHub</b> and is also prepared for F-Droid. It works completely offline: reading your installed apps, their permissions and their trackers, and working out the scores all happen on your phone. The internet is used <b>only when you tap</b> one of these:</p><ul><li><b>Check for updates:</b> Peekless asks the public GitHub API whether a newer version exists and, if you agree, downloads the new APK from GitHub.</li><li><b>Update the tracker list:</b> Peekless downloads a newer tracker list from <code>raw.githubusercontent.com/lumio-apps/peekless</code>. A downloaded list is checked first and can only add trackers, never remove them.</li></ul><p>No personal data and no list of your apps is sent. GitHub sees these requests like any web request (for example your IP address). GitHub's own privacy statement applies to these requests: <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a>.</p><p><b>Network monitor (optional, off by default).</b> When you switch it on, Android asks you to allow a VPN connection. Peekless then runs a <b>local VPN that takes only DNS lookups</b> (one made-up DNS address is the only route), so your other traffic does not pass through it and your internet speed does not change. A lookup is passed on unchanged to your phone's own DNS server, and Peekless keeps only a count of the domain names each app asked for, on your phone. It never sees pages, messages or any content, it has no server, and nothing is sent to us or anyone else. You can clear the counts at any time and switch it off in Peekless or in Android settings.</p>
 
       <h2>Permissions</h2>
       <div class="table-wrap">
@@ -68,6 +68,8 @@
           <tr><td><b>See all installed apps (QUERY_ALL_PACKAGES)</b></td><td>All versions</td><td>Read the list of installed apps and their permissions so each can be scored. Nothing is sent anywhere</td></tr>
           <tr><td><b>Internet</b></td><td>All versions</td><td>Look for and download new versions, and update the tracker list, only when you tap</td></tr>
           <tr><td><b>Install packages</b></td><td>All versions</td><td>Open the installer for an update you downloaded. Android asks you before installing</td></tr>
+          <tr><td><b>VPN service, BIND_VPN_SERVICE (optional)</b></td><td>You grant it</td><td>Only for the Network monitor. Android asks you before it starts. It takes DNS lookups only and nothing leaves your phone</td></tr>
+          <tr><td><b>Network state (ACCESS_NETWORK_STATE)</b></td><td>All versions</td><td>Network monitor: find your phone's own DNS server, so lookups are passed on unchanged</td></tr>
           <tr><td><b>Notifications (optional)</b></td><td>You grant it</td><td>Show the weekly summary and app alerts, if you switch them on</td></tr>
           <tr><td><b>Receive boot completed</b></td><td>All versions</td><td>Plan the optional weekly summary and app alerts again after the phone restarts</td></tr>
           <tr><td><b>Usage access (optional)</b></td><td>You grant it</td><td>Find apps you have not opened for a long time. Used only on your phone, and only if you allow it</td></tr>
@@ -76,6 +78,8 @@
 
       <h2>What a score does and does not mean</h2>
       <p>Peekless shows what an app is <b>allowed</b> to do, not what it actually does. It finds trackers by reading each app's manifest, so some will be missed. A score is a guide, not a verdict. See the <a href="terms.html">Terms and Disclaimer</a>.</p>
+      <h2>What the Network monitor cannot see</h2>
+      <p>It sees DNS lookups only. It can miss apps that use their own encrypted DNS (DNS over HTTPS), it does not work when Android's Private DNS is set to a fixed provider, and showing which app asked needs Android 10 or newer. A domain that matches a tracker list shows that the app contacted that service, not what it sent.</p>
       <h2>Reports you export</h2>
       <p>A report (PDF or JSON) is created on your phone and handed to the Android share sheet. It lists your installed apps, so think before you send it. You choose where it goes. Peekless never uploads it.</p>
       <h2>Children</h2>
